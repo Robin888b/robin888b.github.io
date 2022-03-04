@@ -33,7 +33,7 @@ section:before {
 
 section .content {
     position: relative;
-    padding: 100px 50px 100px 150px;
+    padding: 100px 50px 100px 100px;
     box-sizing: border-box;
     animation: left-in 0.5s ease-in forwards;
     animation-delay: 0.5s;
@@ -130,7 +130,7 @@ section .imgbx img {
 
 .sci {
     position: absolute;
-    left: 150px;
+    left: 100px;
     display: flex;
     animation: left-in 0.5s ease-in forwards;
     animation-delay: 1s;
@@ -157,7 +157,7 @@ section .imgbx img {
 .nav {
     position: absolute;
     top: 75px;
-    left: 150px;
+    left: 100px;
     display: flex;
     border-left: 5px solid #9AA3D9;
     padding-left: 20px;
