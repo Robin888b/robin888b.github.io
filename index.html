@@ -28,8 +28,8 @@
                     i'm a :
                 </p>
                 <ul class="customtxt">
-                    <li class="infolink gay" onclick="">Gay</li>
-                    <li class="infolink furry" onclick="">furry</li>
+                    <li class="infolink gay" onclick="toggleModal(1)">Gay</li>
+                    <li class="infolink furry" onclick="toggleModal(2)">furry</li>
                     <li class="spoiler" onclick="toggleSpoiler('sp1')" id="sp1">(my fursona is Raven Spart)</li>
                 </ul>
                 <p>Highly sensitive and shy person<br>
@@ -48,19 +48,36 @@
             <li><a href="#">Galerie</a></li>
         </ul>
         <ul class="sci sci1">
-            <li><a href="#"><img src="./src/img/svg/codepen.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/deviant-art.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/furaffinity.svg" alt="furaffinity" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/github.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://codepen.io/Robin888b"><img src="./src/img/svg/codepen.svg" alt="Robin888b" width="40" height="30"></a></li>
+            <li><a href="https://www.deviantart.com/robin888b"><img src="./src/img/svg/deviant-art.svg" alt="robin888b" width="40" height="30"></a></li>
+            <li><a href="#"><img onclick="toggleModal(0)" src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.furaffinity.net/user/robin888b/"><img src="./src/img/svg/furaffinity.svg" alt="furaffinity" width="30" height="30"></a></li>
+            <li><a href="https://github.com/Robin888b"><img src="./src/img/svg/github.svg" alt="" width="40" height="30"></a></li>
         </ul><ul class="sci sci2">
-            <li><a href="#"><img src="./src/img/svg/instagram.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/telegram.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/twitch.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/twitter.svg" alt="" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/youtube.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.instagram.com/robin888b/"><img src="./src/img/svg/instagram.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://t.me/robin888b"><img src="./src/img/svg/telegram.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.twitch.tv/robin8888b"><img src="./src/img/svg/twitch.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://twitter.com/robin888b"><img src="./src/img/svg/twitter.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOqa7Ch5Y2VbgSF40RlBDyA"><img src="./src/img/svg/youtube.svg" alt="" width="40" height="30"></a></li>
         </ul>
     </section>
+
+
+    <div class="modal-container">
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="modal">
+            <button class="close-modal" onclick="closeModal()">X</button>
+            <h1 id="modal-title">titre du modal</h1>
+            <div id="modal-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ad at, impedit nihil voluptatem amet accusamus dolore reprehenderit qui repellendus perspiciatis quod, necessitatibus voluptatum temporibus minus ab possimus magnam et?</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
     <script type="text/javascript" src="./src/app.js"></script>
 </body>

@@ -137,7 +137,7 @@ section .imgbx img {
     opacity: 0;
     bottom: 25px;
 }
-.sci2 {left: 380px;}
+.sci2 {left: 370px;}
 
 .sci li {
     list-style: none;
@@ -200,6 +200,90 @@ section .imgbx img {
         opacity: 1;
     }
 }
+
+
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-container.active {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1E2340d3;
+    opacity: 0;
+    display: none;
+    animation: hideModalOverlay 0.8s;
+}
+.modal-container.active .overlay {
+    opacity: 1;
+    display: block;
+    animation: showModalOverlay 0.8s;
+}
+@keyframes showModalOverlay {from {opacity: 0;display: block;} to {opacity: 1;display: none;}}
+@keyframes hideModalOverlay {
+    0% {opacity: 1;display: block;}
+    99% {opacity: 0;display: block;}
+    100% {display: none;}
+    
+}
+
+
+
+
+.modal {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #5E5BA6;
+    border-radius: 3px;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-container.active .modal {
+    top: 40%;
+}
+
+.close-modal {
+    padding: 3px 11px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    position: absolute;
+    background: #272F59;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    animation: modalbtnhover 0.3s;
+    background: #1E2340;
+}@keyframes modalbtnhover {from {background: #272F59;}to {background: #1E2340}}
+
+.modal h1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#modal-content {
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+
 
 
 @media (max-width: 991px){
