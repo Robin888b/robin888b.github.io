@@ -28,8 +28,8 @@
                     je suis un :
                 </p>
                 <ul class="customtxt">
-                    <li class="infolink furry" onclick="">furry</li>
-                    <li class="infolink gay" onclick="">Gay</li>
+                    <li class="infolink furry" onclick="toggleModal(5)">furry</li>
+                    <li class="infolink gay" onclick="toggleModal(4)">Gay</li>
                     <li class="spoiler" onclick="toggleSpoiler('sp1')" id="sp1">(mon fursona est Raven Spart)</li>
                 </ul>
                 <p>gars très sensible et timides<br>
@@ -50,7 +50,7 @@
         <ul class="sci sci1">
             <li><a href="https://codepen.io/Robin888b"><img src="./src/img/svg/codepen.svg" alt="Robin888b" width="40" height="30"></a></li>
             <li><a href="https://www.deviantart.com/robin888b"><img src="./src/img/svg/deviant-art.svg" alt="robin888b" width="40" height="30"></a></li>
-            <li><a href="#"><img src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="#" onclick="toggleModal(3)"><img src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></li>
             <li><a href="https://www.furaffinity.net/user/robin888b/"><img src="./src/img/svg/furaffinity.svg" alt="furaffinity" width="40" height="30"></a></li>
             <li><a href="https://github.com/Robin888b"><img src="./src/img/svg/github.svg" alt="" width="40" height="30"></a></li>
         </ul><ul class="sci sci2">
@@ -61,6 +61,18 @@
             <li><a href="https://www.youtube.com/channel/UCOqa7Ch5Y2VbgSF40RlBDyA"><img src="./src/img/svg/youtube.svg" alt="" width="40" height="30"></a></li>
         </ul>
     </section>
+
+    <div class="modal-container">
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="modal">
+            <button class="close-modal" onclick="closeModal()">X</button>
+            <h1 id="modal-title">titre du modal</h1>
+            <div id="modal-content">
+                <p>if you see this text, there is a bug in the code or you have a bad internet connection<br>si vous voyer ce texte, c'est qu'il y'a un bug dans le code ou que vous avez une movaise connection internet</p>
+            </div>
+        </div>
+    </div>
+
     <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
         <script type="text/javascript" src="./src/app.js"></script>
 </body>

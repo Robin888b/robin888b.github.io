@@ -6,17 +6,22 @@ function menuToggle(){
     toggle.classList.toggle("active")
 }
 
-fetch("./modalContent.json").then(res => 
-    console.log(res.title[1])
-)
+
+
+
 function toggleModal(type){
     var mondalContainer = document.querySelector(".modal-container")
     var modalContent = document.getElementById("modal-content")
     var modalTitle = document.getElementById("modal-title")
     
-    modalTitle.textContent = modaltextjson.title[type]
 
-    modalContent.innerHTML = modaltextjson.content[type]
+    fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/modalContent.json").then(ress => ress.json()).then(data => {
+        modalTitle.textContent = data.title[type]
+
+        modalContent.innerHTML = data.content[type]
+    })
+
+    
     
     mondalContainer.classList.add("active")
     console.log(`Show modal ${type}`)
