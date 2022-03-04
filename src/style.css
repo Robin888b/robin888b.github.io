@@ -286,12 +286,8 @@ section .imgbx img {
     .sci1 {bottom: 50px;}.sci2 {bottom: 5px;left: 100px;}
 }
 @media (max-width: 374px){
-    .sci {
-        left: 50px;
-    }.sci2{left: 50px;}
+    .sci {left: 50px;}.sci2{left: 50px;}
 }
 @media (max-width: 322px) {
-    .sci {
-        left: 15px;
-    }.sci2{left: 15px;}
+    .sci {left: 15px;}.sci2{left: 15px;}
 }
