@@ -270,7 +270,7 @@ section .imgbx img {
         margin-top: 20px;
     }
     .sci {
-                left: 150px;
+        left: 100px;
         display: flex;
         animation: left-in 0.5s ease-in forwards;
         animation-delay: 1s;
@@ -279,5 +279,10 @@ section .imgbx img {
     .sci1 {bottom: 50px;}.sci2 {bottom: 5px;}
     .customtxt li {
         font-size: 1em;
+    }
+}
+@media (max-width: 374px){
+    .sci {
+        left: 50px;
     }
 }
