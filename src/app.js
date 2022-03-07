@@ -64,7 +64,7 @@ let textYo = document.getElementById("year-old")
 let textage = document.getElementById("age")
 let now = new Date()
 const dayOffsetInMinutes = now.getTimezoneOffset()
-const SpecialDay = new Date("2022/03/06")
+const SpecialDay = new Date("2022/11/04")
 
 const OneDayMs = 1000 * 60 * 60 * 24
 const OneHourMs = 1000 * 60 * 60
@@ -80,7 +80,7 @@ const getCountDown = () => {
     } else {
         textage.textContent = `j'ai actuellement 17 ans mais j'en aurai 18 dans ${nbDay} jours et ${nbHoursWithoutDay} heures.`
     }
-    if (remainingTime > 0) { clearInterval(countDownInterval) }
+    if (remainingTime < 0) { clearInterval(countDownInterval) }
 }
 let countDownInterval = setInterval(getCountDown, 600000)
 getCountDown() // start
