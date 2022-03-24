@@ -6,9 +6,6 @@ function menuToggle(){
     toggle.classList.toggle("active")
 }
 
-
-
-
 function toggleModal(type){
     var mondalContainer = document.querySelector(".modal-container")
     var modalContent = document.getElementById("modal-content")
@@ -26,7 +23,6 @@ function toggleModal(type){
     mondalContainer.classList.add("active")
     console.log(`Show modal ${type}`)
 }
-
 
 /*/ modal type :
 
@@ -84,3 +80,16 @@ const getCountDown = () => {
 }
 let countDownInterval = setInterval(getCountDown, 600000)
 getCountDown() // start
+
+
+
+document.addEventListener('input', function (event) {
+
+	// Only run on our select menu
+	if (event.target.id !== 'selectLanguage') return;
+
+	// The selected value
+	console.log(event.target.value);
+    if (event.target.value == "French"){window.open("./about-me/fr.html", '_self'); event.target.value = ""}
+
+}, false);
