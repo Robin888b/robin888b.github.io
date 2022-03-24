@@ -1,3 +1,4 @@
+alert("website under development")
 
 function menuToggle(){
     var nav = document.getElementById("nav")
