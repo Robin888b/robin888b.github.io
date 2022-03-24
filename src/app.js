@@ -1,4 +1,12 @@
-alert("website under development")
+
+var interval = setInterval(function() {
+    if(document.readyState === 'complete') {
+        alert("website under development")
+        clearInterval(interval);
+        done();
+    }    
+}, 100);
+
 
 function menuToggle(){
     var nav = document.getElementById("nav")
