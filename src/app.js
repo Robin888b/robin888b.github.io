@@ -3,7 +3,6 @@ var interval = setInterval(function() {
     if(document.readyState === 'complete') {
         alert("website under development")
         clearInterval(interval);
-        done();
     }    
 }, 100);
 
@@ -15,19 +14,19 @@ function menuToggle(){
     toggle.classList.toggle("active")
 }
 
+let modalJSONdata
+
+fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/modalContent.json").then(ress => ress.json()).then(data => {
+    modalJSONdata = data
+})
+
 function toggleModal(type){
     var mondalContainer = document.querySelector(".modal-container")
     var modalContent = document.getElementById("modal-content")
     var modalTitle = document.getElementById("modal-title")
     
-
-    fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/modalContent.json").then(ress => ress.json()).then(data => {
-        modalTitle.textContent = data.title[type]
-
-        modalContent.innerHTML = data.content[type]
-    })
-
-    
+    modalTitle.textContent = modalJSONdata.title[type]
+    modalContent.innerHTML = modalJSONdata.content[type]    
     
     mondalContainer.classList.add("active")
     console.log(`Show modal ${type}`)
