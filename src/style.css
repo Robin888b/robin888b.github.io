@@ -222,6 +222,60 @@ section .imgbx img {
     }
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.loader.load {
+    display: none;
+}
+
+.loaderOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1e2340;
+    animation: hideModalOverlay 0.8s;
+}
+.loaderContent {
+    padding: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.loaderContent ul {
+    list-style: none;
+    display: flex;
+    color: var(--verryLightPurple);
+    font-size: 50px;
+    cursor:progress;
+}
+
+.loaderContent li {
+    margin: 2px;
+}
+
+.loaderIcon {
+    border: 5px solid var(--lightPurple); /* fond */
+    border-top: 5px solid var(--verryLightPurple); /* loader */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1.5s linear infinite;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 25px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 
 
 .modal-container {
