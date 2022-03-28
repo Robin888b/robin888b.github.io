@@ -3,6 +3,7 @@ var interval = setInterval(function() {
     if(document.readyState === 'complete') {
         alert("website under development")
         clearInterval(interval);
+        getCountDown()
         var loader = document.querySelector(".loader")
         loader.classList.add("load")
     }    
@@ -93,7 +94,7 @@ const getCountDown = () => {
 }
 // Lancement de la fonction de compte
 let countDownInterval = setInterval(getCountDown, 600000)
-getCountDown()
+
 
 
 // ajout de l'event "input"

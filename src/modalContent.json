@@ -3,9 +3,14 @@
         "0" : "Social ⇢ Discord",
         "1" : "What is \"Gay\"",
         "2" : "What is \"Furry\"",
+
         "3" : "Résaux ⇢ Discord",
         "4" : "Que veut dire \"Gay\"",
-        "5" : "Qu'est qu'un \"Furry\""
+        "5" : "Qu'est qu'un \"Furry\"",
+
+        "6" : "redes sociales ⇢ Discord",
+        "7" : "qué es \"Gay\"",
+        "8" : "qué es \"Furry\""
     },
     "content" : {
         "0" : "<h4>Discord username : Robin888b#0423</h4><p>You can find me in <a href=\"https://discord.gg/rvUJ5cvgfX\">Curiosity</a>(french); <a href=\"https://discord.gg/d8mJrmcqdF\">Gunivers</a>(bilingual) &amp; <a href=\"https://discord.gg/discord-developers\">Discord Developers</a>(english)</p><h5>I don't accept friend requests from strangers</h5>",
@@ -15,6 +20,10 @@
 
         "3" : "<h4>Pseudo et tag Discord : Robin888b#0423</h4> <p>Vous pouvez me trouver sur <a href=\"https://discord.gg/rvUJ5cvgfX\">Curiosity</a>(français); sur <a href=\"https://discord.gg/d8mJrmcqdF\">Gunivers</a>(bilingue) & <a href=\"https://discord.gg/discord-developers\">Discord Developers</a>(anglais) </p>",
         "4" : "<h4>\"Gay\" signifie Homosexuel</h4> <p>ce therme est utilisé pour décrir quelqu'un attiré par les personnes de même sex, pas par les personnes du sexe opposé comme la plupart des gens</p><h5>ça ne signifie pas être plus masculin ou féminin et n'a aucun rapport avec le fait d'être transgenre ou non</h5>",
-        "5" : "<p>Le mot \"furry\" a plusieurs significations, qui dépendent du contexte dans lequel il est utilisé. Il peut signifier principalement \"constitué de fourrure ou ressemblant à de la fourrure\".</p><h4>Ici; il se rapporte à un intérêt pour les animaux anthropomorphes et/ou les créatures mythologiques ou imaginaires qui possèdent des capacités humaines ou surhumaines.</h4><p>Le pluriel de furry dans tous ses contextes est furs ou furries ; les sujets d'intérêt pour le furry sont également appelés furries. Comme les membres du fandom ont tendance à s'identifier étroitement à leurs avatars (ou fursonas), le mot est souvent utilisé pour désigner un groupe de personnages à fourrure dans l'art ou les jeux de rôle.</p>"
+        "5" : "<p>Le mot \"furry\" a plusieurs significations, qui dépendent du contexte dans lequel il est utilisé. Il peut signifier principalement \"constitué de fourrure ou ressemblant à de la fourrure\".</p><h4>Ici; il se rapporte à un intérêt pour les animaux anthropomorphes et/ou les créatures mythologiques ou imaginaires qui possèdent des capacités humaines ou surhumaines.</h4><p>Le pluriel de furry dans tous ses contextes est furs ou furries ; les sujets d'intérêt pour le furry sont également appelés furries. Comme les membres du fandom ont tendance à s'identifier étroitement à leurs avatars (ou fursonas), le mot est souvent utilisé pour désigner un groupe de personnages à fourrure dans l'art ou les jeux de rôle.</p>",
+
+        "6" : "<h4>Nombre de usuario de Discord : Robin888b#0423</h4><p>Puedes encontrarme en <a href=\"https://discord.gg/rvUJ5cvgfX\">Curiosity</a>(francés); <a href=\"https://discord.gg/d8mJrmcqdF\">Gunivers</a>(bilingüe) &amp; <a href=\"https://discord.gg/discord-developers\">Discord Developers</a>(inglés)</p><h5>No acepto solicitudes de amistad de desconocidos</h5>",
+        "7" : "<h4>\"gay\" significa homosexual</h4><p>Este término se utiliza para describir a alguien que se siente atraído por personas del mismo sexo, no por personas del sexo opuesto como la mayoría</p><h5>no significa ser más masculino o femenino y no tiene relación con ser transgénero o no</h5>",
+        "8" : "<p>La palabra \"furry\" tiene varios significados, dependiendo del contexto en el que se utilice. Principalmente, significa \"que consiste o se parece a la piel\".</p><h4>En este caso, se trata de un interés por los animales antropomórficos y/o las criaturas mitológicas o imaginarias que poseen capacidades humanas o sobrehumanas.</h4><p>La forma plural de furry en todos sus contextos es furs o furries; los sujetos de interés furry también son conocidos como furries. Como la gente del fandom tiende a identificarse estrechamente con sus avatares (o fursonas), la palabra se utiliza a menudo para referirse a un grupo de personajes furries en el arte o en los juegos de rol.</p>"
     }
 }

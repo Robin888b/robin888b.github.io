@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Salut / Hello 👋  My name is Robin; I speak 🇫🇷 and try to learn 🇬🇧/🇺🇸; this is my personal social card OwO">
+	<meta name="og:image" content="/src/png/Robin888b 100px.png">
+	<meta name="og:title" content="Robin888b / Raven Spart social card">
+	<meta name="og:site_name" content="Robin888b ▪ Raven Spart">
+	<meta name="og:description" content="Salut / Hello 👋  My name is Robin; I speak 🇫🇷 and try to learn 🇬🇧/🇺🇸; this is my personal social card OwO">
+	<meta name="author" content="Robin888b / Raven Spart">
+	<meta name="theme-color" content="#5865F2">
+	<title>Raven Spart ▪ Robin888b</title>
+	<meta name="color-scheme" content="dark">
+
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div>
+                <h2>Robin888b ▪ Raven Spart</h2>
+                <p>Hola 👋<br>
+                    mi nombre es Robin; hablo francés y trato de aprender inglés ≈ 20%.<br></p>
+                    <p id="años">Actualmente tengo 17 años, pero cumpliré 18 en --- días y -- horas.<br></p><p>
+                    Aprendo a dibujar🎨 y a programar💻<br>
+                    ¿qué más decir de mí?<br><br>
+                    soy un <i class="infolink furry" onclick="toggleModal(2)"><code>furry</code></i> <i class="infolink gay" onclick="toggleModal(1)">gay</i> <i class="spoiler" onclick="toggleSpoiler('sp1')" id="sp1">(my fursona is Raven Spart)</i>,
+                    a Highly sensitive and shy person and a music and dance lover <i class="spoiler" onclick="toggleSpoiler('sp2')" id="sp2">(i actualy practice dance in club 3 hours per weeks)</i></p>
+                <a href="./fr.html">switch language to French</a>
+            </div>
+        </div>
+        <div class="imgbx">
+            <img src="./src/img/png/robin888b.png" alt="">
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">About Me</a></li>
+            <li><a href="#">Creation</a></li>
+            <li><a href="#">Social Links</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li>
+                <P>Switch language to</P>
+                <select name="" id="selectLanguage">
+                    <option value="English" disabled selected>English</option>
+                    <option value="French">Français</option>
+                    <option value="spanish">Español</option>
+                </select>
+            </li>
+        </ul>
+        <ul class="sci sci1">
+            <li><a href="https://codepen.io/Robin888b"><img src="./src/img/svg/codepen.svg" alt="Robin888b" width="40" height="30"></a></li>
+            <li><a href="https://www.deviantart.com/robin888b"><img src="./src/img/svg/deviant-art.svg" alt="robin888b" width="40" height="30"></a></li>
+            <li><a href="#"><img onclick="toggleModal(0)" src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.furaffinity.net/user/robin888b/"><img src="./src/img/svg/furaffinity.svg" alt="furaffinity" width="30" height="30"></a></li>
+            <li><a href="https://github.com/Robin888b"><img src="./src/img/svg/github.svg" alt="" width="40" height="30"></a></li>
+        </ul><ul class="sci sci2">
+            <li><a href="https://www.instagram.com/robin888b/"><img src="./src/img/svg/instagram.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://t.me/robin888b"><img src="./src/img/svg/telegram.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.twitch.tv/robin8888b"><img src="./src/img/svg/twitch.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://twitter.com/robin888b"><img src="./src/img/svg/twitter.svg" alt="" width="40" height="30"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOqa7Ch5Y2VbgSF40RlBDyA"><img src="./src/img/svg/youtube.svg" alt="" width="40" height="30"></a></li>
+        </ul>
+    </section>
+
+
+    <div class="modal-container">
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="modal">
+            <button class="close-modal" onclick="closeModal()">X</button>
+            <h1 id="modal-title">modal title</h1>
+            <div id="modal-content">
+                <p>if you see this text, there is a bug in the code or you have a bad internet connection<br>si vous voyer ce texte, c'est qu'il y'a un bug dans le code ou que vous avez une movaise connection internet</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="loader">
+        <div class="loaderOverlay"></div>
+        <div class="loaderContent">
+            <ul>
+                <li>L</li>
+                <li><div class="loaderIcon"></div></li>
+                <li>a</li>
+                <li>d</li>
+                <li>i</li>
+                <li>n</li>
+                <li>g</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script type="text/javascript" src="./src/app.js"></script>
+</body>
+</html>
