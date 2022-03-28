@@ -21,16 +21,16 @@ function menuToggle(){  // TOGGLE MENU          TOGGLE MENU         TOGGLE MENU
 // Modal JSON DATA
 
 //...
-let modalJSONdata
+let translations
 // fetch du json  //  modalJson = résultat du fetch
-fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/modalContent.json").then(ress => ress.json()).then(data => {modalJSONdata = data})
+fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data; console.log(translations)})
 //...
 function toggleModal(type){
     var mondalContainer = document.querySelector(".modal-container")
     var modalContent = document.getElementById("modal-content")
     var modalTitle = document.getElementById("modal-title")
-    modalTitle.textContent = modalJSONdata.title[type]
-    modalContent.innerHTML = modalJSONdata.content[type]    
+    modalTitle.textContent = translations.modalComtent.title[type]
+    modalContent.innerHTML = translations.modalComtent.content[type]    
     mondalContainer.classList.add("active")
     console.log(`Show modal ${type}`)
 }
@@ -44,6 +44,10 @@ function toggleModal(type){
  3 : Discord -> français
  4 : Gay Def -> français
  5 : Fur Def -> français
+ - : -------------------
+ 6 : 
+ 7 :
+ 8 :
 
 */
 
@@ -86,8 +90,11 @@ const getCountDown = () => {
     let nbHoursWithoutDay = Math.floor((remainingTime - nbDay * OneDayMs) / OneHourMs)
     if (textYo){
         textYo.textContent = `I'm actualy 17Yo but i will be 18 in ${nbDay} day and ${nbHoursWithoutDay} hours.`
-    } else { // ↑ Anglais     ↓ Français
+    } else if (textage)
+    { // ↑ Anglais     ↓ Français
         textage.textContent = `j'ai actuellement 17 ans mais j'en aurai 18 dans ${nbDay} jours et ${nbHoursWithoutDay} heures.`
+    } else {
+
     }
     // ↓ si le temp restant eest négatif; clear l'interval
     if (remainingTime < 0) { clearInterval(countDownInterval)}
