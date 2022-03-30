@@ -1,3 +1,19 @@
+let translations
+// fetch du json  //  modalJson = résultat du fetch
+fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data; console.log(translations); SetLanguage("english")})
+
+
+function SetLanguage(lang) {
+    var content = document.querySelector(".content")
+    var nav = document.querySelector(".nav")
+    let trans = translations.pageContent[lang]
+    content.innerHTML = trans.content
+    nav.innerHTML = trans.nav
+    console.log(trans.content)
+}
+
+
+
 
 var interval = setInterval(function() {
     if(document.readyState === 'complete') {
@@ -18,12 +34,6 @@ function menuToggle(){  // TOGGLE MENU          TOGGLE MENU         TOGGLE MENU
 }
 
 
-// Modal JSON DATA
-
-//...
-let translations
-// fetch du json  //  modalJson = résultat du fetch
-fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data; console.log(translations)})
 //...
 function toggleModal(type){
     var mondalContainer = document.querySelector(".modal-container")
@@ -45,9 +55,9 @@ function toggleModal(type){
  4 : Gay Def -> français
  5 : Fur Def -> français
  - : -------------------
- 6 : 
- 7 :
- 8 :
+ 6 : Discord -> espa
+ 7 : Gay Def -> espa
+ 8 : Fur Def -> espa
 
 */
 
@@ -108,5 +118,5 @@ let countDownInterval = setInterval(getCountDown, 600000)
 document.addEventListener('input', function (event) {
 	if (event.target.id !== 'selectLanguage') return; // ← run seulement le bon menu
 	console.log(event.target.value); // ← affiche la valeur dans les logs     ↓ redirige vers la bonne page
-    if (event.target.value == "French"){window.open("./about-me/fr.html", '_self'); event.target.value = ""}
+    SetLanguage(event.target.value)
 }, false);
