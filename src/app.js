@@ -1,6 +1,6 @@
 let translations
 // fetch du json  //  modalJson = résultat du fetch
-fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data; console.log(translations); SetLanguage("english")})
+fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data; console.log(translations); SetLanguage("english"); })
 
 
 function SetLanguage(lang) {
@@ -9,11 +9,8 @@ function SetLanguage(lang) {
     let trans = translations.pageContent[lang]
     content.innerHTML = trans.content
     nav.innerHTML = trans.nav
-    console.log(trans.content)
+    getCountDown()
 }
-
-
-
 
 var interval = setInterval(function() {
     if(document.readyState === 'complete') {
@@ -25,6 +22,40 @@ var interval = setInterval(function() {
     }    
 }, 100);
 
+// Compteur de jours
+
+// définition des variables
+
+let now = new Date()
+const dayOffsetInMinutes = now.getTimezoneOffset()
+const SpecialDay = new Date("2022/11/04")
+const OneDayMs = 1000 * 60 * 60 * 24
+const OneHourMs = 1000 * 60 * 60
+const OneMinuteMs = 1000 * 60
+
+// fonction de compte
+function getCountDown() {
+    let textYo = document.getElementById("year-old")// fonctionne que sur la page En
+    let textage = document.getElementById("age")// fonctionne que sur la page Fr
+    let now = Date.now();
+    let remainingTime = SpecialDay - now + dayOffsetInMinutes * OneMinuteMs + 13.5 * OneHourMs
+    let nbDay = Math.floor(remainingTime / OneDayMs)
+    let nbHoursWithoutDay = Math.floor((remainingTime - nbDay * OneDayMs) / OneHourMs)
+    if (textYo){
+        textYo.textContent = `I'm actualy 17Yo but i will be 18 in ${nbDay} day and ${nbHoursWithoutDay} hours.`
+        console.log(textYo.textContent)
+    } else if (textage)
+    { // ↑ Anglais     ↓ Français
+        textage.textContent = `j'ai actuellement 17 ans mais j'en aurai 18 dans ${nbDay} jours et ${nbHoursWithoutDay} heures.`
+    } else {
+
+    }
+    // ↓ si le temp restant eest négatif; clear l'interval
+    if (remainingTime < 0) { clearInterval(countDownInterval)}
+}
+// Lancement de la fonction de compte
+let countDownInterval = setInterval(getCountDown, 600000)
+getCountDown()
 
 function menuToggle(){  // TOGGLE MENU          TOGGLE MENU         TOGGLE MENU
     var nav = document.getElementById("nav")
@@ -79,38 +110,6 @@ function toggleSpoiler(id) {
 }
 
 
-
-// Compteur de jours
-
-// définition des variables
-let textYo = document.getElementById("year-old")// fonctionne que sur la page En
-let textage = document.getElementById("age")// fonctionne que sur la page Fr
-let now = new Date()
-const dayOffsetInMinutes = now.getTimezoneOffset()
-const SpecialDay = new Date("2022/11/04")
-const OneDayMs = 1000 * 60 * 60 * 24
-const OneHourMs = 1000 * 60 * 60
-const OneMinuteMs = 1000 * 60
-
-// fonction de compte
-const getCountDown = () => {
-    let now = Date.now();
-    let remainingTime = SpecialDay - now + dayOffsetInMinutes * OneMinuteMs + 13.5 * OneHourMs
-    let nbDay = Math.floor(remainingTime / OneDayMs)
-    let nbHoursWithoutDay = Math.floor((remainingTime - nbDay * OneDayMs) / OneHourMs)
-    if (textYo){
-        textYo.textContent = `I'm actualy 17Yo but i will be 18 in ${nbDay} day and ${nbHoursWithoutDay} hours.`
-    } else if (textage)
-    { // ↑ Anglais     ↓ Français
-        textage.textContent = `j'ai actuellement 17 ans mais j'en aurai 18 dans ${nbDay} jours et ${nbHoursWithoutDay} heures.`
-    } else {
-
-    }
-    // ↓ si le temp restant eest négatif; clear l'interval
-    if (remainingTime < 0) { clearInterval(countDownInterval)}
-}
-// Lancement de la fonction de compte
-let countDownInterval = setInterval(getCountDown, 600000)
 
 
 
