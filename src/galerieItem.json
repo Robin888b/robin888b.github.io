@@ -1,7 +1,7 @@
 [
     {
         "title":"Item1",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
@@ -10,7 +10,7 @@
         "HtmlClass" : []
     },{
         "title":"Item2",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
@@ -19,7 +19,7 @@
         "HtmlClass" : []
     },{
         "title":"Item3",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
@@ -28,7 +28,7 @@
         "HtmlClass" : []
     },{
         "title":"Item4",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
@@ -37,7 +37,7 @@
         "HtmlClass" : []
     },{
         "title":"Item5",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
@@ -46,7 +46,7 @@
         "HtmlClass" : []
     },{
         "title":"Item6",
-        "icon" : "../src/img/Robin888b zoom.png",
+        "icon" : "./src/img/Robin888b zoom.png",
         "text1" : "lorem ipsum",
         "text2" : "bla bla bla",
         "link" : "",
