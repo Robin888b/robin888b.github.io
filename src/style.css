@@ -369,7 +369,9 @@ section .imgbx img {
 
 @media (max-width: 991px){
 
-    
+    .sci {
+        position: unset;
+    }
     .menuicon {
         position: fixed;
         top: 40px;
