@@ -451,9 +451,7 @@ section .imgbx img {
     }
 }
 @media (max-width: 500px){
-    section {
-        height: 110vh;
-    }
+    
 }
 @media (max-width: 374px){
     section .imgbx img {
