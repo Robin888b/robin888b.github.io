@@ -82,7 +82,7 @@ section .imgbx {
 }
 
 section .imgbx img {
-    max-width: 250px;
+    max-width: 500px;
     animation: fade-in 0.5s ease-in forwards;
     animation-delay: 2s;
     opacity: 0;
@@ -443,6 +443,10 @@ section .imgbx img {
         opacity: 0;
     }
     .sci1 {bottom: 50px;}.sci2 {bottom: 5px;left: 100px;}
+    
+    section .imgbx img {
+        max-width: 250px;
+    }
 }
 @media (max-width: 374px){
     .sci {left: 50px;}.sci2{left: 50px;}
