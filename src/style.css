@@ -139,28 +139,28 @@ section .imgbx img {
 
 
 .sci {
-    position: absolute;
     left: 100px;
+    border-top: 15px;
+    position: absolute;
     display: flex;
     animation: left-in 0.5s ease-in forwards;
     animation-delay: 1s;
     opacity: 0;
     bottom: 25px;
+    flex-wrap: wrap;
 }
 .sci2 {left: 370px;}
 
-.sci li {
-    list-style: none;
-}
 
-.sci li a {
+
+.sci a {
     text-decoration: none;
     color: var(--textColor2,#999);
     margin-right: 15px;
     font-size: 0.9em;
 }
 
-.sci li a:hover {
+.sci a:hover {
     color: var(--textColor,#fff);
 }
 
@@ -357,11 +357,17 @@ section .imgbx img {
     line-height: 1.4;
     margin-bottom: 5px;
 }
-
+@media (max-width: 1200px){
+    section .imgbx img {
+        max-width: 350px;
+    }
+}
 
 
 
 @media (max-width: 991px){
+
+    
     .menuicon {
         position: fixed;
         top: 40px;
@@ -433,24 +439,26 @@ section .imgbx img {
     .customtxt li {
         font-size: 1em;
     }
+    .sci {left: 50px;}
 }
 @media (max-width : 755px) {
     .sci {
-        left: 100px;
-        display: flex;
         animation: left-in 0.5s ease-in forwards;
         animation-delay: 1s;
         opacity: 0;
     }
-    .sci1 {bottom: 50px;}.sci2 {bottom: 5px;left: 100px;}
-    
+}
+@media (max-width: 500px){
+    section {
+        height: 110vh;
+    }
+}
+@media (max-width: 374px){
     section .imgbx img {
         max-width: 250px;
     }
 }
-@media (max-width: 374px){
-    .sci {left: 50px;}.sci2{left: 50px;}
-}
+
 @media (max-width: 322px) {
-    .sci {left: 15px;}.sci2{left: 15px;}
+    .sci {left: 15px;}
 }
