@@ -1,6 +1,6 @@
 let translations
 // fetch du json  //  modalJson = résultat du fetch
-fetch("https://raw.githubusercontent.com/Robin888b/robin888b.github.io/main/src/translation.json").then(ress => ress.json()).then(data => {translations = data.aboutMeContent; console.log(translations); SetLanguage("english"); })
+fetch("./src/translation.json").then(ress => ress.json()).then(data => {translations = data.aboutMeContent; console.log(translations); SetLanguage("english"); })
 
 
 function SetLanguage(lang) {
