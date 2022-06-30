@@ -66,8 +66,6 @@ section .content p {
 section .content a {
     position: relative;
     display: inline-block;
-    padding: 5px 10px;
-    margin-top: 20px;
     background: var(--lightPurple, #5E5BA6);
     color: var(--textColor,#fff);
     text-decoration: none;
@@ -75,7 +73,6 @@ section .content a {
     font-size: 0.95em;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 50px;
 }
 
 section .imgbx {
@@ -143,13 +140,13 @@ section .imgbx img {
 .sci {
     left: 100px;
     border-top: 15px;
-    position: absolute;
     display: flex;
     animation: left-in 0.5s ease-in forwards;
     animation-delay: 1s;
     opacity: 0;
-    bottom: 25px;
     flex-wrap: wrap;
+    
+    margin-top: 20px;
 }
 .sci2 {left: 370px;}
 
@@ -160,6 +157,7 @@ section .imgbx img {
     color: var(--textColor2,#999);
     margin-right: 15px;
     font-size: 0.9em;
+    background: none!important;
 }
 
 .sci a:hover {
@@ -369,9 +367,7 @@ section .imgbx img {
 
 @media (max-width: 991px){
 
-    .sci {
-        position: unset;
-    }
+    
     .menuicon {
         position: fixed;
         top: 40px;
@@ -427,11 +423,7 @@ section .imgbx img {
     section .content p {
         font-size: 1em;
     }
-    section .content a {
-        font-size: 0.8em;
-        padding: 15px 30px;
-        margin-bottom: 50px;
-    }
+    
     section .imgbx {
         max-width: 100%;
         display: flex;
@@ -443,15 +435,8 @@ section .imgbx img {
     .customtxt li {
         font-size: 1em;
     }
-    .sci {left: 50px;}
 }
-@media (max-width : 755px) {
-    .sci {
-        animation: left-in 0.5s ease-in forwards;
-        animation-delay: 1s;
-        opacity: 0;
-    }
-}
+
 @media (max-width: 500px){
     
 }
@@ -459,8 +444,4 @@ section .imgbx img {
     section .imgbx img {
         max-width: 250px;
     }
-}
-
-@media (max-width: 322px) {
-    .sci {left: 15px;}
 }
