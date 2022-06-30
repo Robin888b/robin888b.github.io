@@ -1,7 +1,8 @@
-let translations
+let translations = websiteTranslations.aboutMeContent
 // fetch du json  //  modalJson = résultat du fetch
-fetch("./src/translation.json").then(ress => ress.json()).then(data => {translations = data.aboutMeContent; console.log(translations); SetLanguage("english"); })
 
+
+console.log(websiteTranslations)
 
 function SetLanguage(lang) {
     var content = document.querySelector(".content")
@@ -15,6 +16,7 @@ function SetLanguage(lang) {
 var interval = setInterval(function() {
     if(document.readyState === 'complete') {
         clearInterval(interval);
+        SetLanguage("english");
         getCountDown()
         var loader = document.querySelector(".loader")
         loader.classList.add("load")
