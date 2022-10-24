@@ -4,6 +4,8 @@ let translations = websiteTranslations.aboutMeContent
 
 console.log(websiteTranslations)
 
+alert(`OUTDATED WEBSITE\nRebuild coming soon ^w^`)
+
 function SetLanguage(lang) {
     var content = document.querySelector(".content")
     var nav = document.querySelector(".nav")
