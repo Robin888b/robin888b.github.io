@@ -62,10 +62,10 @@ function getCountDown() {
         let nbHoursWithoutDay = Math.floor(((remainingTime*-1) - nbDay * OneDayMs) / OneHourMs)
         
         if (textYo){
-            textYo.textContent = `I'm 18Yo since ${nbDay} day and ${nbHoursWithoutDay} hours.`
+            textYo.textContent = `I'm 18Yo.`
         } else if (textage)
         { // ↑ Anglais     ↓ Français
-            textage.textContent = `j'ai 18 ans depuis ${nbDay} jours et ${nbHoursWithoutDay} heures.`
+            textage.textContent = `j'ai 18 ans.`
         } else {// ↓ espagnol
             años.textContent = `Actualmente tengo 18 años.`
         }
