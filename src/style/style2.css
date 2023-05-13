@@ -1,0 +1,145 @@
+@font-face {font-family: Light;  src: url(../fonts/Ubuntu-Light.ttf);}
+@font-face {font-family: Regular;  src: url(../fonts/Ubuntu-Regular.ttf);}
+@font-face {font-family: Bold;  src: url(../fonts/Ubuntu-Bold.ttf);}
+
+
+html {
+    --BackColor1: #1e2340;
+    --BackColor2: #5e5ba6;
+    --TextColor1: #FFFFFF;
+    --TextColor2: #b4baff;
+    --TextSize: 1;
+    --SpoilerGradient: null;
+}
+
+body {
+    background-color: var(--BackColor1);
+    color: var(--TextColor1);
+    font-family: 'light';
+}
+
+#Scontent {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+#controls {
+    display: flex;
+    padding: 5vh 0;
+}
+
+
+#controls #tagList {
+    font-size: 1rem;
+    font-family: Bold;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap
+}
+
+.itemTag {
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    --color4: ;
+    --color5: ;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background:linear-gradient(270deg,
+        #ec9bb640 ,
+        #ccac6f40 ,
+        #69e4a540 ,
+        #8ec5d640 ,
+        #b98cce40 );
+    border-radius: 1000px;
+    background-size: 1000% 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.itemTag:hover,
+.itemTag.selectedTag {
+    background:linear-gradient(270deg,
+        #ec9bb6D0 ,
+        #ccac6fD0 ,
+        #69e4a5D0 ,
+        #8ec5d6D0 ,
+        #b98cceD0 );
+        background-size: 1000% 100%;
+}
+.itemTag:nth-child(0){background-position: 0%;}
+.itemTag:nth-child(1){background-position: 100%;}
+.itemTag:nth-child(2){background-position: 200%;}
+.itemTag:nth-child(3){background-position: 300%;}
+.itemTag:nth-child(4){background-position: 400%;}
+.itemTag:nth-child(5){background-position: 500%;}
+.itemTag:nth-child(6){background-position: 600%;}
+.itemTag:nth-child(7){background-position: 700%;}
+
+.itemTag::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--TextColor1);
+    margin-left: 0.5rem;
+    clip-path: polygon(33% 0%, 66% 0%, 66% 33%, 100% 33%, 100% 66%, 66% 66%, 66% 100%, 33% 100%, 33% 66%, 0% 66%, 0% 33%, 33% 33%);
+}
+
+.itemTag.selectedTag::after {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+#gallery {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+.galleryItem {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#nothingFind h1 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#nothingFind h1::after{
+    content: "";
+    display: block;
+    margin-left: 1rem;
+    height: 3rem;
+    width: 3rem;
+    background: url(../img/png/icons8-broken-robot-100.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#itemDetail {
+    display: none;
+}
+#itemDetail.active {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    z-index: 13;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5vh 5vw;
+}
+
+#itemDetail.active #DetailImg {
+    max-width: 80vw;
+    max-height: 90vh;
+}

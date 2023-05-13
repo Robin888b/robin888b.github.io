@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven Spart's Portfolio</title>
+    <link rel="stylesheet" href="./src/style/style2.css">
+    <link rel="stylesheet" href="./src/style/library.css">
+</head>
+<body>
+    <section id="Scontent">
+        <div id="header" class="">
+            <ul id="headerList">
+                <li class="headerLink"><a href="./index.html">About me</a></li><li class="headerLink"><a href="./social.html">Social</a></li><li class="headerLink selectedHeaderLink"><p>galery</p></li><li class="headerLink"><p onclick="toggleModal(0,3)" >Lang & theme</p></a></li><li class="headerLink"><p onclick="toggleModal(0,4)">Credits</p></li>
+            </ul>
+        </div>
+        <div id="menuIcon" onclick="toggleMenu()"></div>
+
+        <div id="content">
+            <div id="controls">
+                <div id="tagList">
+                    <div class="itemTag selectedTag" onclick="toggleTag(-1)" id="itemTag-1"><p>All</p></div>
+                    <div class="itemTag" onclick="toggleTag(9)" id="itemTag9"><p>Photo</p></div>
+                    <div class="itemTag" onclick="toggleTag(1)" id="itemTag1"><p>Illustration</p></div>
+                    <div class="itemTag" onclick="toggleTag(2)" id="itemTag2"><p>Video</p></div>
+                    <div class="itemTag" onclick="toggleTag(3)" id="itemTag3"><p>Furry</p></div>
+                    <div class="itemTag" onclick="toggleTag(4)" id="itemTag4"><p>Not furry</p></div>
+                    <div class="itemTag" onclick="toggleTag(5)" id="itemTag5"><p>Convention</p></div>
+                    <div class="itemTag" onclick="toggleTag(6)" id="itemTag6"><p>FurMeet</p></div>
+                    <div class="itemTag" onclick="toggleTag(7)" id="itemTag7"><p>2022</p></div>
+                    <div class="itemTag" onclick="toggleTag(8)" id="itemTag8"><p>2023</p></div>
+                </div>
+            </div>
+            <div id="gallery"></div>
+
+
+
+            <!--<div id="itemDetail" class="active">
+                <img id="DetailImg" src="./src/img/gallery/FurMeet-2022-10-08-AnthroSud.jpg" alt="">
+                <div id="detailDesc">
+                    <h1></h1>
+                </div>
+            </div>-->
+        </div>
+    </section>
+    <section id="sModal" class="" >
+        <div id="modal">
+            <div id="modalgrid">
+                <h3 id="modalTitle">Lorem ipsum dolor sit.</h3>
+                <svg id="modalButton" onclick="toggleModal(null,null)" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+                <div id="modalContent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde dignissimos laboriosam a distinctio, accusamus rerum sed est, minus at non rem! Inventore architecto eos neque ratione, odio beatae?
+                </div>
+            </div>
+        </div>
+        <div id="modalOverlay" onclick="toggleModal(null,null)"></div>
+    </section>
+</body>
+<script src="./src/app/modalList.js"></script>
+<script src="./src/app/pageTranslation.js"></script>
+<script src="./src/app/galleryList.js"></script>
+<script src="./src/app/library.js"></script>
+<script src="./src/app/app2.js"></script>
+</html>
