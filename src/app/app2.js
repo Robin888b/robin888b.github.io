@@ -1,7 +1,7 @@
 
 // Tag list
 let tagList = [
-    "photo", //0
+    "photo", //9
     "illustration",//1
     "video",//2
     "furry",//3
@@ -57,13 +57,12 @@ function showDetail(id){
 
     let itemType = itemDetail.src.split(".")
     itemType = itemType[itemType.length - 1]
-    let desc = ""
-    if (itemDetail.description){desc = `${itemDetail.description}<br><br>`}
+    let desc = itemDetail.description
 
-    if (itemType == "jpg"|| itemType == "png"){
+    if (itemDetail.isVideo == false){
         modalContent.innerHTML = `${desc}  <img id="DetailImg" src="${itemDetail.src}" alt="${itemDetail.title}">`
     } else {
-        modalContent.innerHTML = `${desc}  <iframe id="DetailImg" src="${itemDetail.src}"></iframe>`
+        modalContent.innerHTML = `${desc}  <iframe id="DetailImg" style="min-width: 40vw;min-height: 22.5vw;" frameborder="0" src="${itemDetail.link.replace("watch?v=", "embed/")}"></iframe>`
     }
     modalSection.classList.add("active")
 }
@@ -99,8 +98,9 @@ function load(){
 }
 load()
 async function switchLang(lang){/*    LANG        LANG        LANG    */
-    if (lang == 3){alert("Wir haben die Seite noch nicht ins Deutsche übersetzt")}
-    document.getElementById("headerList").innerHTML = await pageTranslation[1][lang].menuText
-    toggleModal(lang, 3)
-    langage = lang
+    if (lang == 3){alert("Wir haben die Seite noch nicht ins Deutsche übersetzt")} else {
+        document.getElementById("headerList").innerHTML = await pageTranslation[1][lang].menuText
+        toggleModal(lang, 3)
+        langage = lang
+    }
 }

@@ -11,8 +11,117 @@
     <link rel="manifest" href="./src/favicon/site.webmanifest">
 
     <title>Document</title>
+
+    <link rel="stylesheet" href="./src/style/library.css">
+    <link rel="stylesheet" href="./src/style/style3.css">
 </head>
 <body>
-    
+    <section id="sContent">
+        <div id="header" class="">
+            <ul id="headerList">
+                <li class="headerLink"><a href="./index.html">About me</a></li><li class="headerLink selectedHeaderLink"><p>Social</p></li><li class="headerLink"><a href="./gallery.html">Gallery</a></li><li class="headerLink"><p onclick="toggleModal(0,3)" >Lang & theme</p></a></li><li class="headerLink"><p onclick="toggleModal(0,4)">Credits</p></li>
+            </ul>
+        </div>
+        <div id="menuIcon" onclick="toggleMenu()"></div>
+        <div id="content">
+            <h1 id="title">Socials medias</h1>
+            <p id="pageDesc">You will find here all the links to my social networks</p>
+            <div id="socialList">
+                <a href="" class="item">
+                    <img src="./src/img/svg/instagram.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Instagram</h2>
+                        <p class="itemDesc">IRL images and video, mainly figure skating </p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/telegram.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Telegram</h2>
+                        <p class="itemDesc">The fastest way to contact me</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img style="margin: 15px;height: 120px;width: 120px;" src="./src/img/svg/furaffinity (1).svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Furaffinity</h2>
+                        <p class="itemDesc">Where I post furry art & pictures</p>
+                    </div>
+                </a>
+                <div id="itemDiscord" class="item">
+                    <img src="./src/img/svg/discord.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Discord</h2>
+                        <p class="itemDesc">Where I'm geekin</p>
+                    </div>
+                </div>
+                <a href="" class="item">
+                    <img src="./src/img/svg/twitter.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Twitter</h2>
+                        <p class="itemDesc">Everything and anything</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/twitch.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Twitch</h2>
+                        <p class="itemDesc">Maybe one day I will do a live</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/deviantart.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">DeviantArt</h2>
+                        <p class="itemDesc">Same as Furaffinity, but not totally furry</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/youtube.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Youtube</h2>
+                        <p class="itemDesc">Some random videos</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/github.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Github</h2>
+                        <p class="itemDesc">Where I put the code of my projects</p>
+                    </div>
+                </a>
+                <a href="" class="item">
+                    <img src="./src/img/svg/codepen.svg" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Codepen</h2>
+                        <p class="itemDesc">Where I test the code of my projects</p>
+                    </div>
+                </a><!--
+                <div class="item">
+                    <img src="./src/img/svg/" alt="" class="itemImg">
+                    <div class="itemContent">
+                        <h2 class="itemTitle">Discord</h2>
+                        <p class="itemDesc">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <section id="sModal" class="" >
+        <div id="modal">
+            <div id="modalgrid">
+                <h3 id="modalTitle">Lang & theme</h3>
+                <svg id="modalButton" onclick="toggleModal(null,null)" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+                <div id="modalContent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officiis quisquam ut fugit atque consectetur?
+                </div>
+            </div>
+        </div>
+        <div id="modalOverlay" onclick="toggleModal(null,null)"></div>
+    </section>
 </body>
+<script src="./src/app/pageTranslation.js"></script>
+<script src="./src/app/modalList.js"></script>
+<script src="./src/app/library.js"></script>
+<script src="./src/app/app3.js"></script>
 </html>
