@@ -58,7 +58,7 @@ const galleryContent = [
         "description":"",
         "date": "",
         "link": 'https://www.youtube.com/watch?v=2AGiEynnoPk',
-        "tags": [2, 4, 7],
+        "tags": [2, 4, 8],
         "src": "../src/img/gallery/figureSkating2023-02-10.png",
         "id": 10,
         "isVideo": true
