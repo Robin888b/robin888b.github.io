@@ -49,8 +49,25 @@ function toggleTag(tag) {
 }
 
 function showDetail(id){
+    let itemDetail
+    galleryContent.forEach(el => {if (el.id == id){itemDetail = el;}})
 
+    if(itemDetail.link){ modalTitle.innerHTML = `<a href="${itemDetail.link}">${itemDetail.title}</a>`
+    }else{modalTitle.innerHTML = itemDetail.title}
+
+    let itemType = itemDetail.src.split(".")
+    itemType = itemType[itemType.length - 1]
+    let desc = ""
+    if (itemDetail.description){desc = `${itemDetail.description}<br><br>`}
+
+    if (itemType == "jpg"|| itemType == "png"){
+        modalContent.innerHTML = `${desc}  <img id="DetailImg" src="${itemDetail.src}" alt="${itemDetail.title}">`
+    } else {
+        modalContent.innerHTML = `${desc}  <iframe id="DetailImg" src="${itemDetail.src}"></iframe>`
+    }
+    modalSection.classList.add("active")
 }
+
 
 function load(){
     if(localStorage.length != 0){

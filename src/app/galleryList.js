@@ -1,7 +1,7 @@
 const galleryContent = [
     {
         "title" : "First fursuit pic.",
-        "discription":"",
+        "description":"",
         "date": "0",
         "link": "https://www.fokuza.net/picture/104197/category/829-le_studio_du_panda",
         "tags": [9, 3, 5, 8],
@@ -9,7 +9,7 @@ const galleryContent = [
         "id": 1
     },{
         "title" : "Fursuit pic. with Qawii & Peppermint Spice",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": "https://www.fokuza.net/picture/104198/category/829-le_studio_du_panda",
         "tags": [9, 3, 5, 8],
@@ -17,7 +17,7 @@ const galleryContent = [
         "id": 2
     },{
         "title" : "Group pics at the TGS",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": "https://twitter.com/LeaderTLG/status/1640481492450136065",
         "tags": [9, 3, 5, 8],
@@ -25,7 +25,7 @@ const galleryContent = [
         "id": 3
     },{
         "title" : "Fursuit pic. with Qawii & Peppermint Spice",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": "https://www.instagram.com/p/CqX674qtX9e/",
         "tags": [9, 3, 5, 8],
@@ -33,7 +33,7 @@ const galleryContent = [
         "id": 4
     },{
         "title" : "Group pics at the AnthroSud's FurMeet",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": null,
         "tags": [9, 3, 6, 7],
@@ -41,15 +41,15 @@ const galleryContent = [
         "id": 5
     },{
         "title" : "",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": null,
         "tags": [9, 3, 5, 7],
         "src": "../src/img/gallery/japanMatsury2022_1.jpg",
         "id": 6
     },{
-        "title" : "",
-        "discription":"",
+        "title" : "manif_2023.jpg",
+        "description":"",
         "date": "",
         "link": null,
         "tags": [9, 4, 8],
@@ -57,7 +57,7 @@ const galleryContent = [
         "id": 7
     },{
         "title" : "",
-        "discription":"",
+        "description":"",
         "date": "",
         "link": "",
         "tags": [],

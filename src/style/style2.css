@@ -128,7 +128,7 @@ body {
 }
 #itemDetail.active {
     display: flex;
-    flex-wrap: wrap;
+    gap: 25px;
     align-items: center;
     position: absolute;
     z-index: 13;
@@ -139,7 +139,10 @@ body {
     padding: 5vh 5vw;
 }
 
-#itemDetail.active #DetailImg {
-    max-width: 80vw;
-    max-height: 90vh;
+#DetailImg {
+    max-width: 70vw;
+    max-height: 60vh;
+    margin: 0;
 }
+
+#sModal #modal {max-width: 70vw ;}
