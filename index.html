@@ -61,18 +61,17 @@
             <script src="./src/app/card.js"></script>
         </div>
     </div>
-<section id="sModal" class="" >
-    <div id="modal">
-        <div id="modalgrid">
-            <h3 id="modalTitle">Lang & theme</h3>
-            <svg id="modalButton" onclick="toggleModal(null,null)" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+    <dialog data-modal>
+        <div class="grid">
+            <h4 id="modalTitle">Lorem ipsum dolor sit amet.</h4>
+            <button onclick="toggleModal(null, null)" class="modalButton"><svg class="modalCross" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px; stroke:#FFFFFF}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg></button>
             <div id="modalContent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officiis quisquam ut fugit atque consectetur?
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo ab similique laboriosam praesentium quibusdam!</p>
             </div>
         </div>
-    </div>
-    <div id="modalOverlay" onclick="toggleModal(null,null)"></div>
-</section>
+        <div class="overlay" onclick="toggleModal(null, null)"></div>
+    </dialog>
+    <div data-overlay></div>
 </body>
 <script src="./src/app/modalList.js"></script>
 <script src="./src/app/pageTranslation.js"></script>

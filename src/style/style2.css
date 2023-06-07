@@ -105,6 +105,7 @@ body {
     width: auto;
     border-radius: 10px;
     cursor: pointer;
+    background-color: var(--BackColor2);
 }
 
 #nothingFind h1 {
@@ -145,5 +146,7 @@ body {
     max-height: 60vh;
     margin: 0;
 }
+
+[data-modal] .grid { max-width: 70vw;}
 
 #sModal #modal {max-width: 70vw ;}

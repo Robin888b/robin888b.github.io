@@ -9,12 +9,22 @@ async function toggleSpoiler(id) {
 }
 
 //modal
-const modalSection = document.getElementById("sModal")
+/*
+
+document.querySelector("[data-overlay]").classList.add("active");
+    document.querySelector("[data-modal]").classList.add("active");
+    document.querySelector("[data-modal]").showModal()
+*/
+const overlay = document.querySelector("[data-overlay]")
+const modal = document.querySelector("[data-modal]")
 const modalTitle = document.getElementById("modalTitle")
 const modalContent = document.getElementById("modalContent")
+
 function toggleModal(lang, content){
     if (content == null){
-        modalSection.classList.remove("active")
+        document.querySelector("[data-overlay]").classList.remove("active");
+        document.querySelector("[data-modal]").classList.remove("active");
+        document.querySelector("[data-modal]").close()
         modalTitle.innerHTML = "modalContentList[content][lang].title"
         modalContent.innerHTML = "modalContentList[content][lang].content"
     }else{
@@ -24,11 +34,13 @@ function toggleModal(lang, content){
             const sw = document.getElementById("sw1")
             sw.classList.add("on")
         }
-        if (menu.classList.contains("active")) {
-        menu.classList.remove("active")
-        menuIcon.classList.remove("active")
+            if (menu.classList.contains("active")) {
+            menu.classList.remove("active")
+            menuIcon.classList.remove("active")
         }
-        modalSection.classList.add("active")
+        document.querySelector("[data-overlay]").classList.add("active");
+        document.querySelector("[data-modal]").classList.add("active");
+        document.querySelector("[data-modal]").showModal()
     }
 }
 

@@ -32,20 +32,24 @@ body {background-color: var(--BackColor1);  color: var(--TextColor1);  font-fami
 @keyframes spoilerGradient {0% {background: #898EF9;}  33% {background: #8F79DB;}  66% {background: #C291F2;}  100% {background: #898EF9;}}
 @keyframes spoil { 0% {background-color: #8e79db;  color: #ffffff00;}  25% {color: #ffffff00;}  100% {  background-color: #8e79db00;  color: var(--textColor,#fff);}}
 
-#sModal {visibility: hidden;  display: flex;  opacity: 0;  position: fixed;  top: 0;  left: 0;  z-index: 5;  width: 100vw;  height: 100vh;  backdrop-filter: blur(0px);  align-items: center;  justify-content: center;  box-shadow: 0 0 50px 25px #fff;}
-#sModal.active {backdrop-filter: blur(10px);  visibility: visible;  position: fixed;  opacity: 1;  animation: showModal 1s;  -webkit-animation: showModal 1s;}
-#modal {z-index: 10;  min-width: 20vw;  min-height: 20vh;  max-width: 50vw;  background-color: var(--BackColor1);  border-radius: 25px;  -webkit-border-radius: 25px;  -moz-border-radius: 25px;  -ms-border-radius: 25px;  -o-border-radius: 25px;  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);  font-family: Light;}
-#modalgrid {display: grid;  grid-template-rows: 60px auto;  grid-template-columns: auto 50px;  gap: 8px;}
-#modalTitle {margin: auto;  grid-area: 1 / 1 / 2 / 2;}
-#modalContent {padding: 1em;  font-size: 20px;  grid-area: 2 / 1 / 3 / 3;}
-#modalButton {padding: 5px;  grid-area: 1 / 2 / 2 / 3;  object-fit: cover;  height: 30px;  width: 30px;}
-#modalButton #cross {stroke: var(--TextColor1);}
-#modalOverlay {position: fixed;  top: 0;  left: 0;  z-index: 7;  width: 100vw;  height: 100vh;}
-@keyframes showModal {0% {visibility: hidden}  1% {opacity: 0;visibility: visible;backdrop-filter: blur(0px);}  100% {opacity: 1;backdrop-filter: blur(10px);}}
+[data-modal] { display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;  align-items: center;   justify-content: center;  border: none; max-width:  100%;max-height: 100%; background: none;}
+[data-modal].active {display: flex;}
+[data-modal] .grid { padding: 5px;  z-index: 10000; color: var(--TextColor1); background-color: var(--BackColor1); border-radius: 25px; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);  font-family: Light; display: grid; grid-template-rows: 40px auto; grid-template-columns: auto 50px; gap: 8px; max-width: 50vw;}
+#modalTitle {margin: auto; grid-area: 1 / 1 / 2 / 2; font-size: 1.5em;}
+#modalContent {padding: 1em; font-size: 20px; grid-area: 2 / 1 / 3 / 3;}
+.modalButton { padding: 5px; grid-area: 1 / 2 / 2 / 3; object-fit: cover; height: 30px; width: 30px; background: none; border: none; color: var(--TextColor1); margin: auto;}
+[data-modal] .modalButton .modalCross .cls-1{stroke: var(--TextColor1);}
+[data-modal] .overlay {height: 100%; width: 100%; position: absolute; z-index: -1; inset: 0px;}
+/* Overlay de flou */
+[data-overlay] {height: 100%; width: 100%; position: fixed; inset: 0px; background-color: #00000000; backdrop-filter: blur(0px); visibility: hidden; animation: hideModalOverlay 0.25s;z-index: 1000;}
+[data-overlay].active {visibility: visible; backdrop-filter: blur(10px); background-color: #00000060; animation: showModalOverlay 1s;}
+/*Animation*/
+@keyframes showModalOverlay {from {visibility: visible; backdrop-filter: blur(0px); background-color: #00000000;} to {backdrop-filter: blur(10px); background-color: #00000060;}}
+@keyframes hideModalOverlay {from { backdrop-filter: blur(10px); background-color: #00000060; visibility: visible;} to {backdrop-filter: blur(0px); background-color: #00000000; visibility: visible;}}
 
-#modalContent p {margin-bottom: 5px;}
-#modalContent h4 {margin-bottom: 5px;}
-#modalContent h3 {margin-bottom: 5px;}
+.modalContent p {margin-bottom: 5px;}
+.modalContent h4 {margin-bottom: 5px;}
+.modalContent h3 {margin-bottom: 5px;}
 
 .langItem {cursor: pointer;}
 .langItem:hover img {border: 2px solid var(--TextColor2);  box-shadow: 0 0px 15px 0 var(--TextColor2);  padding: 0;}

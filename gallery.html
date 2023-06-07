@@ -11,8 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="./src/style/style2.css">
     <link rel="stylesheet" href="./src/style/library.css">
+    <link rel="stylesheet" href="./src/style/style2.css">
 </head>
 <body>
     <section id="Scontent">
@@ -43,23 +43,17 @@
 
         </div>
     </section>
-    <section id="sModal" class="" >
-        <div id="modal">
-            <div id="modalgrid">
-                <h3 id="modalTitle">Lorem ipsum dolor sit.</h3>
-                <svg id="modalButton" onclick="toggleModal(null,null)" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
-                <div id="modalContent">
-                    <p>at the <a href="https://tgs-montpellier.fr/">TGS of Montpellier</a></p><br>
-
-                    <blockquote class="twitter-tweet" data-theme="dark">
-                        <a href="https://twitter.com/robin888b/status/1624158661781118994?ref_src=twsrc%5Etfw">February 10, 2023</a>
-                    </blockquote>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+    <dialog data-modal>
+        <div class="grid">
+            <h4 id="modalTitle">Lorem ipsum dolor sit amet.</h4>
+            <button onclick="toggleModal(null, null)" class="modalButton"><svg class="modalCross" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px; stroke:#FFFFFF}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg></button>
+            <div id="modalContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo ab similique laboriosam praesentium quibusdam!</p>
             </div>
         </div>
-        <div id="modalOverlay" onclick="toggleModal(null,null)"></div>
-    </section>
+        <div class="overlay" onclick="toggleModal(null, null)"></div>
+    </dialog>
+    <div data-overlay></div>
 </body>
 <script src="./src/app/modalList.js"></script>
 <script src="./src/app/pageTranslation.js"></script>
