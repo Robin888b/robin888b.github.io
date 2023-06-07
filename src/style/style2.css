@@ -59,6 +59,7 @@ body {
     background-size: 1000% 100%;
     object-fit: cover;
     display: flex;
+    cursor: pointer;
 }
 
 .itemTag:hover,

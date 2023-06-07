@@ -62,7 +62,7 @@ function showDetail(id){
     if (itemDetail.isVideo == false){
         modalContent.innerHTML = `${desc}  <img id="DetailImg" src="${itemDetail.src}" alt="${itemDetail.title}">`
     } else {
-        modalContent.innerHTML = `${desc}  <iframe id="DetailImg" style="min-width: 40vw;min-height: 22.5vw;" frameborder="0" src="${itemDetail.link.replace("watch?v=", "embed/")}"></iframe>`
+        modalContent.innerHTML = `${desc}  <iframe id="DetailImg" style="min-width: 40vw;min-height: 22.5vw;" frameborder="0" src="${itemDetail.link.replace("watch?v=", "embed/")}" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
     modalSection.classList.add("active")
 }

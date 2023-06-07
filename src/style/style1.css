@@ -4,6 +4,16 @@
 
 html {--BackColor2: #5e5ba6;}
 
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {position: relative;}
+
 #content {
     flex-grow: 1;
     padding: 5vh 5vw 8vh;
@@ -11,8 +21,6 @@ html {--BackColor2: #5e5ba6;}
     flex-direction: row;
     align-items: center;
     font-family: light;
-    min-height: 100vh;
-    min-height: 100svh;
     max-width: 100%;
 }
 
