@@ -14,6 +14,7 @@ html {
     --TextSize: 1;
     --SpoilerGradient: null;
     --phoneHeaderBack: #00000080;
+
 }
 
 body {background-color: var(--BackColor1);  color: var(--TextColor1);  font-family: 'light';}
@@ -63,6 +64,28 @@ body {background-color: var(--BackColor1);  color: var(--TextColor1);  font-fami
 
 .rememberButton {background-color: var(--BackColor2);  color: var(--TextColor1);  font-size: 20px;  padding: 7px;  border-radius: 10px;  -webkit-border-radius: 10px;  -moz-border-radius: 10px;  -ms-border-radius: 10px;  -o-border-radius: 10px;  border: none;  transition: all 0.15s;  -webkit-transition: all 0.15s;  -moz-transition: all 0.15s;  -ms-transition: all 0.15s;  -o-transition: all 0.15s;}
 .rememberButton:hover {box-shadow: 0 0px 15px 0 var(--TextColor2);  background-color: var(--BackColor1);}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--BackColor2);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--TextColor2);
+    border-radius: 5px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--TextColor1);
+}
 
 @media (max-width:  100vmin) {
     #header li a {text-decoration: none;  font-family: Regular;  font-size: 2rem;  font-style: none;}
