@@ -5,11 +5,13 @@ canvas.height = window.innerHeight
 
 let particlesArray;
 let mouse = {
-    x: null,
-    y: null,
+    x: -5000,
+    y: -5000,
     radius: (canvas.height/100)*(canvas.width/100)
 }
 window.addEventListener("mousemove", (event) => {mouse.x = event.x; mouse.y = event.y})
+
+window.addEventListener("resize", init)
 
 class Particle {
     constructor(x, y, directionX, directionY, size, color) {
@@ -61,6 +63,8 @@ class Particle {
 }
 
 function init(){
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
     particlesArray = []
     let particlesNumber = Math.floor((canvas.height*canvas.width)/ 8000)
     for (let i = 0; i < particlesNumber; i++){
