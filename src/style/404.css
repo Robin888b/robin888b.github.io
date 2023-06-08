@@ -44,7 +44,7 @@ body {
 }
 .content h1 {
     font-family: Bold;
-    font-size: 3em;
+    font-size: 4em;
 }
 .content p {
     font-family: Regular;
@@ -61,6 +61,7 @@ body {
     font-size: 1.3em;
     text-decoration: none;
     text-decoration: underline;
+    transition: transform 0.5s;
 }
 .linkList a:hover {
     transform: scale(1.1);
