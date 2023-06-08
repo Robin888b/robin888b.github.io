@@ -1,0 +1,67 @@
+@font-face {font-family: Light;  src: url(../fonts/Ubuntu-Light.ttf);}
+@font-face {font-family: Regular;  src: url(../fonts/Ubuntu-Regular.ttf);}
+@font-face {font-family: Bold;  src: url(../fonts/Ubuntu-Bold.ttf);}
+
+html, body, canvas {
+    margin: 0;
+    padding: 0;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scrollbar-width: 0px;
+}
+
+canvas {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #1e2340, #5e5ba6);
+}
+body {
+    background: linear-gradient(45deg, #1e2340, #5e5ba6);
+}
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: block;
+    min-height: 30vh;
+    min-width: 30vw;
+    backdrop-filter: blur(5px);
+    /*border: 1px #000 solid;*/
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: #00000020;
+    color: #ffffff;
+    padding: 25px;
+}
+.content h1 {
+    font-family: Bold;
+    font-size: 3em;
+}
+.content p {
+    font-family: Regular;
+    font-size: 1.2em;
+}
+.linkList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.linkList a {
+    color: #FFFFFF;
+    font-family: Bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-decoration: underline;
+}
+.linkList a:hover {
+    transform: scale(1.1);
+}
