@@ -1,7 +1,7 @@
 // card => see card.js
 
 function load(){
-    if(localStorage.length != 0){
+    if(localStorage.getItem("lang") != null || localStorage.getItem("theme") != null){
         let lang_ = localStorage.getItem("lang")
         let theme_ = localStorage.getItem("theme")
         let pageText = document.getElementById("text")
@@ -26,6 +26,23 @@ function load(){
             pageText.innerHTML = pageTranslation[0][lang_].pageText
             navText.innerHTML = pageTranslation[0][lang_].menuText
             discordLink.innerHTML = `<img onclick="toggleModal(${lang_},2)" src="./src/img/svg/discord.svg" alt="discord">`
+        }
+    } else {
+        try {
+            var userLang = navigator.language || navigator.userLanguage;
+            if(userLang.includes("fr")){
+                document.getElementById("text").innerHTML = pageTranslation[0][1].pageText
+                document.getElementById("headerList").innerHTML = pageTranslation[0][1].menuText
+                document.getElementById("discordLink").innerHTML = `<img onclick="toggleModal(${1},2)" src="./src/img/svg/discord.svg" alt="discord">`
+                console.log("fr")
+            }else if (userLang.includes("es")){
+                document.getElementById("text").innerHTML = pageTranslation[0][2].pageText
+                document.getElementById("headerList").innerHTML = pageTranslation[0][2].menuText
+                document.getElementById("discordLink").innerHTML = `<img onclick="toggleModal(${2},2)" src="./src/img/svg/discord.svg" alt="discord">`
+            }
+
+        } catch (error) {
+            console.error(error)
         }
     }
 }

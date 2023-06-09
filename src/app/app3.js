@@ -22,7 +22,7 @@ document.getElementById("itemDiscord").addEventListener("click", ()=>{
 })
 
 function load(){
-    if(localStorage.length != 0){
+    if(localStorage.getItem("lang") != null || localStorage.getItem("theme") != null){
         let lang_ = localStorage.getItem("lang")
         let theme_ = localStorage.getItem("theme")
         if (theme_ == 0){
@@ -42,6 +42,18 @@ function load(){
         }
         if(lang_ != 0){
             switchLang(lang_, "e")
+        }
+    }else {
+        try {
+            var userLang = navigator.language || navigator.userLanguage;
+            if(userLang.includes("fr")){
+                switchLang(1, "e")
+            }else if (userLang.includes("es")){
+                switchLang(2, "e")
+            }
+
+        } catch (error) {
+            console.error(error)
         }
     }
 }

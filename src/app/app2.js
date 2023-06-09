@@ -73,7 +73,7 @@ function showDetail(id){
 
 
 function load(){
-    if(localStorage.length != 0){
+    if(localStorage.getItem("lang") != null || localStorage.getItem("theme") != null){
         let lang_ = localStorage.getItem("lang")
         let theme_ = localStorage.getItem("theme")
         if (theme_ == 0){
@@ -94,6 +94,18 @@ function load(){
         if(lang_ != 0){
             document.getElementById("headerList").innerHTML = pageTranslation[1][lang_].menuText
             langage = lang_
+        }
+    }else {
+        try {
+            var userLang = navigator.language || navigator.userLanguage;
+            if(userLang.includes("fr")){
+                document.getElementById("headerList").innerHTML = pageTranslation[1][1].menuText
+            }else if (userLang.includes("es")){
+                document.getElementById("headerList").innerHTML = pageTranslation[1][2].menuText
+            }
+
+        } catch (error) {
+            console.error(error)
         }
     }
     let itemList = ""
