@@ -30,15 +30,15 @@ const modalContentList = [
     [
         {
             "title" : "Social ⇢ Discord",
-            "content": "<h3>Discord username : Robin888b#0423</h3><p>You can find me in <a href=\"https://discord.com/invite/rvUJ5cvgfX\">Curiosity</a>(french); <a href=\"https://discord.gg/CNaZGCD7Zb\">Gunivers</a>(bilingual) & <a href=\"https://discord.gg/discord-developers\">Discord Developers</a>(english)</p><h4>I don't accept friend requests from strangers</h4>"
+            "content": '<h3>Discord username : Robin888b#0423 / @robin888b</h3><p>You can find me in <a href="https://discord.com/invite/rvUJ5cvgfX">Curiosity</a>(french); <a href="https://discord.gg/CNaZGCD7Zb">Gunivers</a>(bilingual) & <a href="https://discord.gg/discord-developers">Discord Developers</a>(english)</p><h4>I don\'t accept friend requests from strangers</h4>'
         },
         {
             "title" : "Réseaux ⇢ Discord",
-            "content": ""
+            "content": '<h3>Discord : Robin888b#0423 / @robin888b</h3><p>Vous pouvez me retrouver sur <a href="https://discord.com/invite/rvUJ5cvgfX">Curiosity</a>(français); <a href="https://discord.gg/CNaZGCD7Zb">Gunivers</a>(bilingue) & <a href="https://discord.gg/discord-developers">Discord Developers</a>(englais)</p><h4>Je n\'accepte pas les demandes d\'amis provenant d\'inconnus.</h4>'
         },
         {
-            "title" : "",
-            "content": ""
+            "title" : "Redes sociales ⇢ Discord",
+            "content": '<h3>Mi usuario Discord : Robin888b#0423 / @robin888b</h3><p>Puedes encontrarme en <a href="https://discord.com/invite/rvUJ5cvgfX">Curiosity</a>(francés); <a href="https://discord.gg/CNaZGCD7Zb">Gunivers</a>(bilingüe) & <a href="https://discord.gg/discord-developers">Discord Developers</a>(inglés)</p><h4>No acepto solicitudes de amistad de desconocidos</h4>'
         }
     ],
     [
