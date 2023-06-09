@@ -10,6 +10,10 @@ let mouse = {
     radius: (canvas.height/100)*(canvas.width/100)
 }
 window.addEventListener("mousemove", (event) => {mouse.x = event.x; mouse.y = event.y})
+window.addEventListener("mouseout", () => {mouse.x = -5000; mouse.y = -5000})
+window.addEventListener("touchmove", (event) => {mouse.x = event.touches[0].clientX; mouse.y = event.touches[0].clientY})
+window.addEventListener("touchend", ()=> {mouse.x = -5000; mouse.y = -5000})
+window.addEventListener("touchcancel", ()=> {mouse.x = -5000; mouse.y = -5000})
 
 window.addEventListener("resize", init)
 
