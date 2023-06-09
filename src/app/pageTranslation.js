@@ -21,15 +21,15 @@ const pageTranslation = [
     [
         {
             "menuText": '<li class="headerLink"><a href="./index.html">About me</a></li><li class="headerLink"><a href="./social.html">Social</a></li><li class="headerLink selectedHeaderLink"><p>galery</p></li><li class="headerLink"><button onclick="toggleModal(0,3)" >Lang & theme</button></a></li><li class="headerLink"><button onclick="toggleModal(0,4)">Credits</button></li>',
-            "nothingFind": '<div id="nothingFind"><h1>Sorry, we haven\'t found any result corresponding to your search</h1></div>',
+            "nothingFind": '<div id="nothingFind"><h1><p>Sorry, we haven\'t found any result corresponding to your search <spant id="nothingFindIcon"></spant></p></h1></div>',
             "tags": ["Photo","Artwork","Video","Furry","Not furry","convention","FurMeet","2022","2023","all"]
         },{
             "menuText": '<li class="headerLink"><a href="./index.html">A propos</a></li><li class="headerLink"><a href="./social.html">Réseaux</a></li><li class="headerLink selectedHeaderLink"><p>Gallerie</p></li><li class="headerLink"><button onclick="toggleModal(1,3)" >Lang & theme</button></a></li><li class="headerLink"><button onclick="toggleModal(1,4)">Crédits</button></li>',
-            "nothingFind": '<div id="nothingFind"><h1>Désolé, nous n\'avons trouvé pas de résultat correspondant à votre recherche</h1></div>',
+            "nothingFind": '<div id="nothingFind"><h1><p>Désolé, nous n\'avons trouvé pas de résultat correspondant à votre recherche <spant id="nothingFindIcon"></spant></p></h1></div>',
             "tags": ["Photo","Illustration","Vidéo","Furry","Non furry","convention","FurMeet","2022","2023","tout type"]
         },{
             "menuText": '<li class="headerLink"><a href="./index.html">Sobre mí</a></li><li class="headerLink"><a href="./social.html">Redes sociales</a></li><li class="headerLink selectedHeaderLink"><p>Galería</p></li><li class="headerLink"><button onclick="toggleModal(2,3)" >Lang & theme</button></a></li><li class="headerLink"><button onclick="toggleModal(2,4)">Créditos</button></li>',
-            "nothingFind": '<div id="nothingFind"><h1>Perdone, pero no hemos encontrado ningún resultado que coincida con su búsqueda</h1></div>',
+            "nothingFind": '<div id="nothingFind"><h1><p>Perdone, pero no hemos encontrado ningún resultado que coincida con su búsqueda <spant id="nothingFindIcon"></spant></p></h1></div>',
             "tags": ["Photo","Artwork","Video","Furry","Not furry","convention","FurMeet","2022","2023"]
         }
     ],

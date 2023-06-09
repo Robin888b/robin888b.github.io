@@ -1,0 +1,168 @@
+@font-face {font-family: Light;  src: url(../fonts/Ubuntu-Light.ttf);}
+@font-face {font-family: Regular;  src: url(../fonts/Ubuntu-Regular.ttf);}
+@font-face {font-family: Bold;  src: url(../fonts/Ubuntu-Bold.ttf);}
+
+html {--BackColor2: #5e5ba6;}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {position: relative;}
+
+#content {
+    flex-grow: 1;
+    padding: 5vh 5vw 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: light;
+    max-width: 100%;
+}
+
+#contentText {max-width: 60vw;}
+#contentText h1 {font-size: 4rem;}
+#contentText p {font-size: 1.5rem;}
+
+#contentImg {
+    min-width: 30vw;
+    min-height: 60vh;
+    width: 100%;
+    margin-left: 5vh;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.socialLink {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-right: 40px;
+    padding-top: 40px;
+    font-style: none;
+    z-index: 2;
+}
+.socialLink button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.socialLink img,
+.socialLink svg {
+    margin: 0.5vw;
+    height: 5vw;
+    width:  5vw;
+    max-height: 50px;
+    max-width: 50px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.socialLink::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background-color: var(--BackColor2);
+    opacity: 0.5;
+    height: 6.5vw;
+    width: 6.5vw;
+    max-height: 70px;
+    max-width: 70px;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.socialLink:nth-child(4n+1)::before {rotate: 12.33deg;}
+.socialLink:nth-child(4n+2)::before {rotate: -3.88deg;}
+.socialLink:nth-child(4n+3)::before {rotate: 5.47deg;}
+.socialLink:nth-child(4n+4)::before {rotate: -13.65deg;}
+
+.socialLink:hover::before {
+    rotate: 0deg;
+    transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    opacity: 0.8;
+}
+
+@media (max-width:  100vmin) {
+    #content {
+        flex-grow: 1;
+        padding: 15vh 5vw 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-family: light;
+    }
+    #contentText {max-width: none;}
+    #contentText h1 {font-size: 2rem;}
+    #contentText p {font-size: 1.5rem;}
+
+    #contentImg .card {
+        min-width: none;
+        margin-left: 0;
+        width: 20vh;
+        height: 30vh;
+        border-radius: 1.5vh;
+        -webkit-border-radius: 1.5vh;
+        -moz-border-radius: 1.5vh;
+        -ms-border-radius: 1.5vh;
+        -o-border-radius: 1.5vh;
+    }
+    .contentCard {
+        min-width: none;
+        border-radius: 1.5vh;
+        -webkit-border-radius: 1.5vh;
+        -moz-border-radius: 1.5vh;
+        -ms-border-radius: 1.5vh;
+        -o-border-radius: 1.5vh;
+    }
+    .cardGlow {
+        border-radius: 1.5vh;
+        -webkit-border-radius: 1.5vh;
+        -moz-border-radius: 1.5vh;
+        -ms-border-radius: 1.5vh;
+        -o-border-radius: 1.5vh;
+    }
+    .social {margin-top: 15vh;}
+    .socialLink {
+        display: block;
+        text-decoration: none;
+        padding-right: 1vh;
+        padding-top: 1vh;
+        font-style: none;
+        z-index: 2;
+    }
+    #contentImg  {
+        margin-top: 15vw;
+        margin-left: 5vw;
+        height: 140vw;
+        perspective: 2000px;
+        border-radius: 1.5vw;
+        margin: 0 0 5vh;
+    }
+}
