@@ -52,7 +52,7 @@ body {background-color: var(--BackColor1);  color: var(--TextColor1);  font-fami
 #modalContent h3 {margin-bottom: 5px;}
 #modalContent h4 {margin-bottom: 5px;}
 
-.langItem {cursor: pointer;}
+.langItem {cursor: pointer;font-size: 1em;background: none; border: none; color: var(--TextColor1);}
 .langItem:hover img {border: 2px solid var(--TextColor2);  box-shadow: 0 0px 15px 0 var(--TextColor2);  padding: 0;}
 .langItem:hover p {text-decoration: underline;}
 .langItem img {  border-radius: 100vmax;  -webkit-border-radius: 100vmax;  -moz-border-radius: 100vmax;  -ms-border-radius: 100vmax;  -o-border-radius: 100vmax;  margin: 15px;  box-sizing: content-box;  padding: 2px;  transition: box-shadow 0.15s;  -webkit-transition: box-shadow 0.15s;  -moz-transition: box-shadow 0.15s;  -ms-transition: box-shadow 0.15s;  -o-transition: box-shadow 0.15s;}
