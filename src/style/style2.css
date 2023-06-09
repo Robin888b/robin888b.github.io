@@ -43,11 +43,6 @@ body {
 }
 
 .itemTag {
-    --color1: ;
-    --color2: ;
-    --color3: ;
-    --color4: ;
-    --color5: ;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background:linear-gradient(270deg,
         #ec9bb640 ,
@@ -60,6 +55,12 @@ body {
     object-fit: cover;
     display: flex;
     cursor: pointer;
+    border: none;
+    color: var(--TextColor1);
+    margin: 0;
+    font-size: 1rem;
+    font-family: Bold;
+    display: flex;
 }
 
 .itemTag:hover,
@@ -105,7 +106,8 @@ body {
     width: auto;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--BackColor2);
+    background-size: cover;
+    min-width: 100px;
 }
 
 #nothingFind h1 {

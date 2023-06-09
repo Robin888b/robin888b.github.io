@@ -18,12 +18,16 @@ html {
 }
 
 body {background-color: var(--BackColor1);  color: var(--TextColor1);  font-family: 'light';}
+.btnNoStyle {text-align: center;align-items: center;cursor: pointer;box-sizing: border-box;background: none;margin: 0;padding: 0;border: none;background-size: cover;}
 
 #header {position: absolute;  margin-left: 5vw;  margin-top: 5vh;  border-left: 5px solid var(--TextColor2);  padding-left: 40px;}
 #header ul {display: flex;  flex-direction: row;  align-items: center;  list-style: none;}
 .headerLink{padding-right: 40px;  font-family: Regular;  font-size: 25px;  font-style: none;  cursor: pointer;}
 .headerLink a {text-decoration: none;}
+.headerLink button {font-family: Regular;  font-size: 25px;  font-style: none;  cursor: pointer; margin: 0; padding: 0; background: none; color: var(--TextColor1); border: none;}
+
 .headerLink:hover {text-decoration:underline;}
+.headerLink:hover button {text-decoration:underline;}
 .selectedHeaderLink {color: var(--TextColor2);font-weight: bold;}
 .SpanInfo {text-decoration: underline;  font-style: italic;  cursor: pointer;}
 

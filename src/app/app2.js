@@ -26,7 +26,8 @@ function toggleTag(tag) {
         let itemList = ""
         galleryContent.forEach(item => {
             if (item.src != null && item.id != null){
-                itemList += `<img class="galleryItem" onclick="showDetail('${item.id}')" src="${item.src}" alt="${item.title}">`
+                itemList += `<button class="btnNoStyle galleryItem" onclick="showDetail('${item.id}')"><img loading="lazy" class="galleryItem" src="${item.src}" alt="${item.title}" style="background-image: url('${item.srcBlur}'); min-width: ${item.size.width * 250 / item.size.height}px;"></button>`
+                console.log("1")
             }
         })
         if (itemList == ""){ itemList = `<div id="nothingFind"><h1>Sorry, we haven't found any result corresponding to your search</h1></div>`}
@@ -40,7 +41,8 @@ function toggleTag(tag) {
                 if (activeTag.find(el => el === tag)){containTag = true}
             })
             if (containTag == true){
-                itemList += `<img class="galleryItem" onclick="showDetail('${item.id}')" src="${item.src}" alt="${item.title}">`
+                itemList += `<button class="btnNoStyle galleryItem" onclick="showDetail('${item.id}')"><img loading="lazy" class="galleryItem" src="${item.src}" alt="${item.title}" style="background-image: url('${item.srcBlur}'); min-width: ${item.size.width * 250 / item.size.height}px;"></button>`
+            console.log("2")
             }
         })
         if (itemList == ""){ itemList = pageTranslation[1][langage].nothingFind}
@@ -95,7 +97,9 @@ function load(){
         }
     }
     let itemList = ""
-    galleryContent.forEach(item => {if (item.src != null && item.id != null){itemList += `<img class="galleryItem" onclick="showDetail('${item.id}')" src="${item.src}" alt="${item.title}">`}})
+    galleryContent.forEach(item => {if (item.src != null && item.id != null){
+            itemList += `<button class="btnNoStyle galleryItem" onclick="showDetail('${item.id}')"><img loading="lazy" class="galleryItem" src="${item.src}" alt="${item.title}" style="background-image: url('${item.srcBlur}'); min-width: ${item.size.width * 250 / item.size.height}px;"></button>`
+        }})
     document.getElementById("gallery").innerHTML = itemList
 }
 load()

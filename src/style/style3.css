@@ -31,6 +31,13 @@
     z-index: 5;
     transition: all 0.25s;
     text-decoration: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Regular;
+    display: flex;
+    color: var(--TextColor1);
 }
 .item::before{
     content: "";
