@@ -51,7 +51,6 @@ function toggleTag(tag) {
             })
             if (containTag == true){
                 itemList += `<button class="btnNoStyle galleryItem" onclick="showDetail('${item.id}')"><img loading="lazy" class="galleryItem" src="${item.src}" alt="${item.title}" style="background-image: url('${item.srcBlur}'); min-width: ${item.size.width * 250 / item.size.height}px;"></button>`
-            console.log("2")
             }
         })
         if (itemList == ""){ itemList = pageTranslation[1][langage].nothingFind}
