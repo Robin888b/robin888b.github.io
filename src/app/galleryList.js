@@ -110,16 +110,16 @@ const galleryContent = [
         "isVideo": true,
         "size" : {"height": 719, "width": 1279}
     },{
-        "title" : "",
-        "description":"",
+        "title" : "Artwork by @aldermoth on twitter",
+        "description":"<p>A beautiful gift from <a href=\"https://twitter.com/aldermoth\">Alder</a>, check his <a href=\"https://twitter.com/aldermoth/status/1669689555002310656\">twitter</a></p><br>",
         "date": "",
-        "link": null,
-        "tags": [],
-        "src": "../src/img/gallery/",
-        "srcBlur": "../src/img/gallery/blur/",
-        "id": null,
+        "link": "https://twitter.com/aldermoth/status/1669689555002310656",
+        "tags": [1, 3, 8],
+        "src": "../src/img/gallery/aldermoth2023-06-17.png",
+        "srcBlur": "../src/img/gallery/blur/aldermoth2023-06-17.png",
+        "id": 11,
         "isVideo": false,
-        "size" : {"height": 0, "width": 0}
+        "size" : {"height": 3016, "width": 2749}
     },{
         "title" : "",
         "description":"",
