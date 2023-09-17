@@ -94,6 +94,12 @@ body {
     -o-border-radius: 5px;
 }
 
+#phoneImg img {
+    width: 80vw;
+}
+#phoneImg {
+    display: none;
+}
 .socialLink:nth-child(4n+1)::before {rotate: 12.33deg;}
 .socialLink:nth-child(4n+2)::before {rotate: -3.88deg;}
 .socialLink:nth-child(4n+3)::before {rotate: 5.47deg;}
@@ -158,11 +164,15 @@ body {
         z-index: 2;
     }
     #contentImg  {
-        margin-top: 15vw;
-        margin-left: 5vw;
+        display: none;
         height: 140vw;
         perspective: 2000px;
         border-radius: 1.5vw;
+    }
+    #phoneImg {
+        display:block;
+        margin-top: 15vw;
+        margin-left: 5vw;
         margin: 0 0 5vh;
     }
 }
