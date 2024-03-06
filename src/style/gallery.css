@@ -169,7 +169,7 @@ body {
         margin: 0;
     }
 
-    .galleryItem {max-width: 90vw; min-height: none;}
+    .galleryItem {width: 90vw; height: auto; min-height: 100px;}
     .galleryItem img {max-width: 90vw !important; min-height: 0; min-width: 10vw !important;}
 
 }
