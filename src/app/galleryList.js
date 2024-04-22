@@ -44,28 +44,6 @@ const galleryContent = [
         "isVideo": false,
         "size" : {"height": 1350, "width": 1080}
     },{
-        "title" : "Group pics at the AnthroSud's FurMeet",
-        "description":"",
-        "date": "",
-        "link": "https://twitter.com/AnthroSud/status/1579021019913732096",
-        "tags": [9, 3, 6, 7],
-        "src": "../src/img/gallery/FurMeet-2022-10-08-AnthroSud.jpg",
-        "srcBlur": "../src/img/gallery/blur/FurMeet-2022-10-08-AnthroSud.jpg",
-        "id": 5,
-        "isVideo": false,
-        "size" : {"height": 1069, "width": 1280}
-    },{
-        "title" : "picture at the Japan Matsury at Montpellier",
-        "description":"",
-        "date": "",
-        "link": null,
-        "tags": [9, 3, 5, 7],
-        "src": "../src/img/gallery/japanMatsury2022_1.jpg",
-        "srcBlur": "../src/img/gallery/blur/japanMatsury2022_1.jpg",
-        "id": 6,
-        "isVideo": false,
-        "size" : {"height": 1600, "width": 720}
-    },{
         "title" : "Figure skating self training 2023/02/10",
         "description":"",
         "date": "",
@@ -76,17 +54,6 @@ const galleryContent = [
         "id": 10,
         "isVideo": true,
         "size" : {"height": 720, "width": 1280}
-    },{
-        "title" : "manif_2023.jpg",
-        "description":"",
-        "date": "",
-        "link": null,
-        "tags": [9, 4, 8],
-        "src": "../src/img/gallery/manif_2023-03-11_13.50.53.jpg",
-        "srcBlur": "../src/img/gallery/blur/manif_2023-03-11_13.50.53.jpg",
-        "id": 7,
-        "isVideo": false,
-        "size" : {"height": 1600, "width": 720}
     },{
         "title" : "First fursuit picture",
         "description":"",
@@ -121,16 +88,49 @@ const galleryContent = [
         "isVideo": false,
         "size" : {"height": 3016, "width": 2749}
     },{
-        "title" : "",
+        "title" : "Japan matsury 2023",
         "description":"",
         "date": "",
         "link": null,
-        "tags": [],
-        "src": "../src/img/gallery/",
-        "srcBlur": "../src/img/gallery/blur/",
-        "id": null,
+        "tags": [9,3,5,8],
+        "src": "../src/img/gallery/photo_2023-10-24_11-36-51.jpg",
+        "srcBlur": "../src/img/gallery/blur/photo_2023-10-24_11-36-51.jpg",
+        "id": 5,
         "isVideo": false,
-        "size" : {"height": 0, "width": 0}
+        "size" : {"height": 960, "width": 1280}
+    },{
+        "title" : "Japan matsury 2023",
+        "description":"",
+        "date": "",
+        "link": null,
+        "tags": [9,3,5,8],
+        "src": "../src/img/gallery/photo_2023-10-24_11-36-59.jpg",
+        "srcBlur": "../src/img/gallery/blur/photo_2023-10-24_11-36-59.jpg",
+        "id": 6,
+        "isVideo": false,
+        "size" : {"height": 960, "width": 1280}
+    },{
+        "title" : "meet Anthroplouf 2023",
+        "description":"",
+        "date": "",
+        "link": null,
+        "tags": [9,3,6,8],
+        "src": "../src/img/gallery/Picture_MeetPloufAnthro01.jpg",
+        "srcBlur": "../src/img/gallery/blur/Picture_MeetPloufAnthro01.jpg",
+        "id": 7,
+        "isVideo": false,
+        "size" : {"height": 3375, "width": 6000}
+    },{
+        "title" : "illustration by cody",
+        "description":"",
+        "date": "",
+        "link": null,
+        "tags": [1,3,8],
+        "src": "../src/img/gallery/owo.png",
+        "srcBlur": "../src/img/gallery/blur/owo.png",
+        "id": 12,
+        "isVideo": false,
+        "size" : {"height": 5120, "width": 5120}
     },{
         "title" : "",
         "description":"",
