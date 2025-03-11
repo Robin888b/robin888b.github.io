@@ -1,126 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Salut / Hello 👋  My name is Robin; I speak 🇫🇷 and try to learn 🇬🇧/🇺🇸; this is my personal social card OwO">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven Spart's Portfolio</title>
 
-	
-	<meta property="og:description" content="Salut / Hello 👋  My name is Robin; I speak 🇫🇷 and try to learn 🇬🇧/🇺🇸; this is my personal social card OwO">
-        <meta property="og:title" content="Robin888b / Raven Spart social card">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://robin888b.github.io/">
-        <meta property="og:image" content="https://robin888b.github.io/src/img/png/robin888b.png">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="300">
-        <meta property="og:image:height" content="300">
-        <meta property="og:image:alt" content="picture of RavenSpart">
-	
-	<meta name="author" content="Robin888b / Raven Spart">
-	<meta name="theme-color" content="#5865F2">
-	<title>Raven Spart ▪ Robin888b</title>
-	<meta name="color-scheme" content="dark">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="./src/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#9b81e0">
-    <meta name="msapplication-config" content="/src/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#9b81e0">
 
-    <link rel="stylesheet" href="./src/style.css">
+    <meta property="og:title" content="Raven Spart's Portfolio" />
+    <meta property="og:description" 
+  content="Hy 👋
+  I'm Robin888b / Raven Spart
+  I'm a gay french furry and this is my personal portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robin888b.github.io/" />
+    <meta property="og:image" content="https://robin888b.github.io/src/img/png/robin888b.png" />
+
+    <link rel="stylesheet" href="./src/style/library.css">
+    <link rel="stylesheet" href="./src/style/index.css">
+    <style id="stCard"></style>
 </head>
 <body>
-    <section>
-        <div class="content">
-            <div>
-                <h2>Robin888b ▪ Raven Spart</h2>
-                <p>Hello 👋<br>
-                my name is Robin; I speak french and try to learn english ≈ 20%<br></p>
-                <p id="year-old">I'm currently 17Yo but i will be 18 in --- day and -- hours.<br></p><p>
-                I learn to draw🎨 and program💻<br>
-                what more to say about me ?<br><br>
-                i'm a <i class="infolink gay" onclick="toggleModal(1)">gay</i> <i class="infolink furry" onclick="toggleModal(2)"><code>furry</code></i> <i class="spoiler" onclick="toggleSpoiler('sp1')" id="sp1">(my fursona is Raven Spart)</i>,
-                a Highly sensitive and shy person and a music and dance lover <i class="spoiler" onclick="toggleSpoiler('sp2')" id="sp2">(i currently practice dance in club 3 hours per weeks)</i></p>
-                <div class="sci">
-
-                    <div><a href="https://codepen.io/Robin888b"><img src="./src/img/svg/codepen.svg" alt="Robin888b" width="40" height="30"></a></div>
-                    
-                    <div><a href="https://www.deviantart.com/robin888b"><img src="./src/img/svg/deviant-art.svg" alt="robin888b" width="40" height="30"></a></div>
-
-                    <div><a href="#"><img onclick="toggleModal(0)" src="./src/img/svg/discord.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://www.furaffinity.net/user/robin888b/"><img src="./src/img/svg/furaffinity.svg" alt="furaffinity" width="30" height="30"></a></div>
-
-                    <div><a href="https://github.com/Robin888b"><img src="./src/img/svg/github.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://www.instagram.com/robin888b/"><img src="./src/img/svg/instagram.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://t.me/robin888b"><img src="./src/img/svg/telegram.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://www.twitch.tv/robin8888b"><img src="./src/img/svg/twitch.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://twitter.com/robin888b"><img src="./src/img/svg/twitter.svg" alt="" width="40" height="30"></a></div>
-
-                    <div><a href="https://www.youtube.com/channel/UCOqa7Ch5Y2VbgSF40RlBDyA"><img src="./src/img/svg/youtube.svg" alt="" width="40" height="30"></a></div>
-
-                </div>
-            </div>
-                </div>
-        <div class="imgbx">
-            <img src="./src/img/png/robin888b.png" alt="">
-        </div>
-        <ul class="nav" id="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#" class="active">About Me</a></li>
-            <li><a href="#">Creation</a></li>
-            <li><a href="#">Social Links</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li>
-                <P>Switch language to</P>
-                <select name="" id="selectLanguage">
-                    <option value="english" disabled selected>English</option>
-                    <option value="french">Français</option>
-                    <option value="spanish">Español</option>
-                </select>
-            </li>
+    <div id="header" class="">
+        <ul id="headerList">
+            <li class="headerLink selectedHeaderLink"><p>About me</p></li>
+            <li class="headerLink"><a href="./social.html">Social</a></li>
+            <li class="headerLink"><a href="./gallery.html">Gallery</a></li>
+            <li class="headerLink"><button onclick="toggleModal(0,3)" >Lang & theme</button></a></li>
+            <li class="headerLink"><button onclick="toggleModal(0,4)">Credits</button></li>
         </ul>
-        
-        <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
-    </section>
-
-
-    <div class="modal-container">
-        <div class="overlay" onclick="closeModal()"></div>
-        <div class="modal">
-            <button class="close-modal" onclick="closeModal()">X</button>
-            <h1 id="modal-title">modal title</h1>
-            <div id="modal-content">
-                <p>if you see this text, there is a bug in the code or you have a very bad internet connection<br>si vous voyer ce texte, c'est qu'il y'a un bug dans le code ou que vous avez une très movaise connection internet</p>
-            </div>
-        </div>
     </div>
+    <div id="menuIcon" onclick="toggleMenu()"></div>
+
+    <div id="content">
+        <div id="contentText">
+            <h1 id="title">Robin888b ▪ Raven Spart</h1>
 
 
-    <div class="loader">
-        <div class="loaderOverlay"></div>
-        <div class="loaderContent">
-            <ul>
-                <li>L</li>
-                <li><div class="loaderIcon"></div></li>
-                <li>a</li>
-                <li>d</li>
-                <li>i</li>
-                <li>n</li>
-                <li>g</li>
+            <p id="text">Hy 👋 <br>My name is Robin; I speak french and try to learn english ≈ 20%<br>I'm 20Yo (2004/11/04).<br>I learn to draw🎨 and program💻 <br>what more to say about me ?<br><br>i'm a <span class="SpanInfo" onclick="toggleModal(0,0)">gay</span> <span class="SpanInfo" onclick="toggleModal(0,1)">furry</span> <span class="spoiler" id="sp1" onclick="toggleSpoiler('sp1')">(my fursona is Raven Spart)</span>, a Highly sensitive and shy person and a music and dance lover <span class="spoiler" id="sp2" onclick="toggleSpoiler('sp2')">(i currently practice dance in club 1.5 hours per weeks + 1 hours of figure skating)</span></p>
+
+            <ul id="social">
+                <li class="socialLink"><a href="https://codepen.io/Robin888b"><img src="./src/img/svg/codepen.svg" alt="codepen"></a></li>
+                <li class="socialLink"><a href="https://www.deviantart.com/robin888b"><img src="./src/img/svg/deviantart.svg" alt="deviantart"></a></li>
+                <li class="socialLink" id="discordLink"><button><img onclick="toggleModal(0,2)" src="./src/img/svg/discord.svg" alt="discord"></button></li>
+                <li class="socialLink"><a href="https://www.furaffinity.net/user/robin888b/"><?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1"><g id="surface1"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 48.695312 25.316406 C 48.703125 23.703125 48.800781 14.601562 50 10.417969 L 35.046875 10.417969 L 34.503906 14.648438 L 39.578125 16.171875 L 39.640625 20.742188 L 44.289062 20.828125 L 44.171875 25.617188 Z M 48.695312 25.316406 "/><path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.519531 38.429688 C 8.519531 38.273438 8.523438 38.113281 8.527344 37.957031 L 8.527344 37.980469 C 8.835938 30.195312 17.277344 28.859375 23.613281 29.050781 L 23.613281 26.808594 C 23.511719 24.996094 22.074219 23.398438 17.90625 23.398438 C 15.128906 23.398438 11.832031 23.761719 9.699219 24.546875 L 10.265625 19.484375 C 12.304688 18.898438 14.601562 18.328125 19.542969 18.328125 C 29.070312 18.328125 30.121094 22.636719 30.042969 27.636719 L 30 39.582031 L 35.363281 39.582031 C 42.246094 39.582031 47.910156 33.863281 48.617188 27.019531 L 42.480469 27.265625 L 42.585938 22.492188 L 38 22.410156 L 37.925781 17.257812 L 32.664062 15.429688 L 33.367188 10.417969 L 13.722656 10.417969 C 5.765625 10.417969 0 17.324219 0 24.894531 L 0 39.582031 L 8.574219 39.582031 C 8.539062 39.238281 8.519531 38.835938 8.519531 38.429688 Z M 8.519531 38.429688 "/><path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 23.660156 38.253906 C 23.773438 37.800781 23.660156 36.328125 23.660156 35.820312 L 23.554688 32.710938 C 19.347656 32.53125 14.804688 33.394531 14.804688 37.355469 C 14.804688 38.210938 15.160156 38.988281 15.695312 39.582031 L 22.59375 39.582031 C 23.109375 39.28125 23.5 38.871094 23.660156 38.253906 Z M 23.660156 38.253906 "/></g></svg></a></li>
+                    <!--le svg ne chargais pas correctement-->
+                <li class="socialLink"><a href="https://github.com/Robin888b"><img src="./src/img/svg/github.svg" alt="github"></a></li>
+                <li class="socialLink"><a href="https://www.instagram.com/robin888b/"><img src="./src/img/svg/instagram.svg" alt="instagram"></a></li>
+                <!--<li class="socialLink"><a href=""><img src="./src/img/svg/pinterest.svg" alt="pinterest"></a></li>-->
+                <li class="socialLink"><a href="https://t.me/robin888b"><img src="./src/img/svg/telegram.svg" alt="telegram"></a></li>
+                <li class="socialLink"><a href="https://www.twitch.tv/robin8888b"><img src="./src/img/svg/twitch.svg" alt="twitch"></a></li>
+                <li class="socialLink"><a href="https://twitter.com/robin888b"><img src="./src/img/svg/twitter.svg" alt="twitter"></a></li>
+                <li class="socialLink"><a href="https://www.youtube.com/channel/UCOqa7Ch5Y2VbgSF40RlBDyA"><img src="./src/img/svg/youtube.svg" alt="youtube"></a></li>
             </ul>
         </div>
+        <div id="contentImg">
+            <link rel="stylesheet" href="./src/style/card.css">
+            <div id="cardHover">
+                <div id="card">
+                    <div id="cardImage"></div>
+                    <div id="gradient"></div>
+                </div>
+            </div>
+            <script src="./src/app/card.js"></script>
+        </div>
+        <div id="phoneImg">
+            <img src="./src/img/png/robin888b.png" alt="">
+        </div>
     </div>
-
-
-    
-    <script type="text/javascript" src="./src/translations.js"></script>
-    <script type="text/javascript" src="./src/app.js"></script>
+    <dialog data-modal>
+        <div class="grid">
+            <h4 id="modalTitle">Lorem ipsum dolor sit amet.</h4>
+            <button onclick="toggleModal(null, null)" class="modalButton"><svg class="modalCross" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px; stroke:#FFFFFF}</style></defs><title/><g id="cross" stroke="#000"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg></button>
+            <div id="modalContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo ab similique laboriosam praesentium quibusdam!</p>
+            </div>
+        </div>
+        <div class="overlay" onclick="toggleModal(null, null)"></div>
+    </dialog>
+    <div data-overlay></div>
 </body>
+<script src="./src/app/modalList.js"></script>
+<script src="./src/app/pageTranslation.js"></script>
+<script src="./src/app/library.js"></script>
+<script src="./src/app/index.js"></script>
 </html>
