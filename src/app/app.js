@@ -16,6 +16,12 @@ document.getElementById("menuToggle").addEventListener("click", e=>{
 })
 
 
+// calcul current age
+const today = new Date()
+const birthday = new Date(2004, 11, 4)
+let age = (today.getFullYear() - birthday.getFullYear())
+if ((today.getMonth() < birthday.getMonth())||((today.getMonth() == birthday.getMonth())&&(today.getDay() < birthday.getDay()))){ age -= 1}
+document.getElementById("age").innerText = age;
 
 
 const queryString = window.location.search;
@@ -45,6 +51,7 @@ function changeLang(urp){
         document.getElementById("liLinks").href+= `?lang=${urp}`
         // new spoilers have no eventListeners
         document.querySelectorAll(".spoiler").forEach(function(e){e.addEventListener("click", ()=> {e.classList.add("clicked")})})
+        document.getElementById("age").innerText = age;
     }else{
         let i = 0
         document.getElementById("liHome").href+= `?lang=${urp}`
