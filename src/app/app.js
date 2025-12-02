@@ -18,7 +18,7 @@ document.getElementById("menuToggle").addEventListener("click", e=>{
 
 // calcul current age
 const today = new Date()
-const birthday = new Date(2004, 11, 4)
+const birthday = new Date("2004-11-04")
 let age = (today.getFullYear() - birthday.getFullYear())
 if ((today.getMonth() < birthday.getMonth())||((today.getMonth() == birthday.getMonth())&&(today.getDay() < birthday.getDay()))){ age -= 1}
 document.getElementById("age").innerText = age;
